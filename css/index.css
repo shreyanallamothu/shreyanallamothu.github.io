@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Outfit:wght@100..900&display=swap');
 
 body{
-    background-color: #fcf5e6;
+    background-color: #faf8f0;
     margin: 0;
 }
 
@@ -279,4 +279,31 @@ h2 {
     border-radius: 15px;
     color: white;
     margin-left: 10px;
+}
+
+.story{
+    font-family: "Outfit";
+    color: #151c68;
+    font-size: 1.2rem;
+}
+
+.advocacy p {
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.hero p{
+    font-family: "Outfit";
+    color: #151c68;
+    font-size: 1.2rem; 
+}
+
+.about p{
+    font-family: "Outfit";
+    color: #151c68;
+    font-size: 1.2rem;
+    font-weight: 350;
+    margin-bottom: 30px;
+    line-height: 1.5;
 }
