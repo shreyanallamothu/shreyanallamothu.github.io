@@ -321,3 +321,86 @@ h2 {
     margin-bottom: 30px;
     line-height: 1.5;
 }
+
+.about img{
+    transition: transform .2s
+}.about img:hover{
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .hero-left {
+        width: 100%;
+    }
+    #headshot {
+        height: auto;
+        max-width: 80%;
+    }
+    h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    .buttons {
+        flex-direction: column;
+    }
+    .buttons button {
+        width: 100%;
+        padding: 18px;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+    }
+    .project-item {
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    .project-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    .about img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .advocacy {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .carousel-container {
+        flex-direction: column;
+    }
+    .carousel-container img {
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .header .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    #nameplate {
+        font-size: 1.5rem;
+    }
+}
