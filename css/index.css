@@ -342,21 +342,33 @@ h2 {
     }
     h1 {
         font-size: 2.5rem;
-        line-height: 1.1;
+        line-height: 0;
+        margin-bottom: 10px;
+    }
+    
+
+    .hero img{
+        margin-top: 40px;
     }
     h2 {
         font-size: 2rem;
     }
     .buttons {
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .buttons button {
-        width: 100%;
+        width: 250px;
         padding: 18px;
     }
 
+    .project-grid{
+        justify-content: center;
+    }
+
     .project-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: .9fr;
         padding: 1.5rem;
     }
     .project-item {
