@@ -38,20 +38,11 @@ h1{
 
 }
 
-.project-item {
-    min-height: 450px;
-    outline: 2px solid #151c68;
-    border-radius: 10px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-    background-color: white;
-}
-
-.project-item h2{
-    margin-top: 0;
-}
-
 .advocacy{
-    padding: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 1.4rem;
+
 }
 
 .advocacy-left-right{
@@ -245,4 +236,47 @@ h2 {
 .contact p{
     color: white;
     font-family: "Fraunces"
+}
+
+.project-item a {
+    display: block;
+}
+
+.project-grid h4 {
+    font-family: "Outfit";
+    font-size: 1.6rem;
+    margin: 10px 0 10px 0;
+    padding: 0 10px;
+    color: #f15443;
+}
+
+.project-item p {
+    font-family: "Outfit";
+    color: #151c68;
+    margin-top: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.project-item {
+    height: 650px;
+    outline: 2px solid #151c68;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    background-color: white;
+}
+
+.tech-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    row-gap: 0;
+}
+
+.tech-stack p {
+    background-color: #4874b5;
+    padding: 6px 10px;
+    border-radius: 15px;
+    color: white;
+    margin-left: 10px;
 }
