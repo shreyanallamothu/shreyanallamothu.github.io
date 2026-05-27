@@ -26,8 +26,11 @@ h1{
     gap: 1.5rem;
 }
 
-.typewriter{
-    font-style: italic;
+.typed-cursor {
+    font-size: 5rem;
+    font-weight: 100;
+    transform: scaleX(0.5);
+    display: inline-block;
 }
 
 .project-grid{
@@ -70,6 +73,7 @@ h1{
     font-weight: thin;
     font-family: "Outfit";
     transition: color .2s;
+    font-size: .9rem;
 }
 
 .buttons button:hover {
@@ -269,7 +273,7 @@ h2 {
 }
 
 .project-item {
-    height: 650px;
+    min-height: 650px;
     outline: 2px solid #151c68;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.12);
@@ -346,6 +350,13 @@ h2 {
         margin-bottom: 10px;
     }
     
+    .typed-cursor {
+    font-size: 2.5rem;
+    font-weight: 100;
+    transform: scaleX(0.5);
+    display: inline-block;
+}
+
 
     .hero img{
         margin-top: 40px;
