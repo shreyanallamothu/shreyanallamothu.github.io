@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KlossyKollective &mdash; Shreya Nallamothu</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/klossykollective.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">Shreya Nallamothu</a>
+  <nav class="site-nav">
+    <a href="projects.html" class="active">projects</a>
+    <a href="advocacy.html">i passed a law!</a>
+    <a href="blog.html">blog</a>
+    <a href="about.html">about</a>
+    <a href="#footer">contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+</header>
+
+<section class="case-hero">
+  <div class="container case-container">
+    <a class="case-back" href="projects.html">&larr; Back to projects</a>
+    <p class="case-meta">Kode with Klossy &times; Codex &middot; AI Build Lab, 2026</p>
+    <h1>KlossyKollective</h1>
+    <p class="case-subheading">A full-stack community hub for KWK members and alumni</p>
+    <div class="case-meta-row">
+      <span class="chip">Role: AI Build Lab Fellow</span>
+      <span class="chip">React</span>
+      <span class="chip">Next.js</span>
+      <span class="chip">TypeScript</span>
+      <span class="chip">PostgreSQL</span>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+
+  <div class="case-section">
+    <div class="container case-text">
+      <h2>The problem</h2>
+      <div class="callout-box">
+        <p>Kode with Klossy alumni lose touch with each other and the program after their summer ends. There's no
+          shared space to keep collaborating, and organizers have no single tool to run community programming
+          beyond emails.</p>
+      </div>
+
+      <h2>Product objectives</h2>
+      <ol class="objectives-list">
+        <li><strong>Centralize member experience</strong> with a single destination for events, resources, and
+          community updates.</li>
+        <li><strong>Strengthen community connections</strong> by making it easy for members to discover
+          interest-based communities.</li>
+        <li><strong>Support lifelong engagement</strong> by providing alumni with an ongoing space to network and
+          stay connected with Kode with Klossy.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="case-section">
+    <div class="container">
+      <h2>Built for discovery, engagement &amp; retention</h2>
+      <div class="pillars-grid">
+        <div>
+          <div class="pillar-group">
+            <h3>For discovery</h3>
+            <span class="pillar-pill">Connect with other women in technology</span>
+            <span class="pillar-pill">Create interest-based communities</span>
+          </div>
+          <div class="pillar-group">
+            <h3>For engagement</h3>
+            <span class="pillar-pill">Share helpful resources</span>
+            <span class="pillar-pill">Start conversations through posts</span>
+          </div>
+          <div class="pillar-group">
+            <h3>For retention</h3>
+            <span class="pillar-pill">Find community events</span>
+          </div>
+        </div>
+        <div class="pillars-media">
+          <img src="assets/klossykollective photos/community-hub.png" alt="Community Hub landing page showing interest-based communities like AI for Artists, Indie Game Developers, and Local Climate Action">
+          <img src="assets/klossykollective photos/community-resources.png" alt="Resources panel with a searchable list of community-shared links">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-section">
+    <div class="container">
+      <h2>Feature deep dive: creating a resource</h2>
+      <div class="deepdive-grid">
+        <div class="deepdive-media">
+          <img src="assets/klossykollective photos/resources-list.png" alt="Resources list with searchable community links">
+        </div>
+        <ol class="flow-steps">
+          <li class="flow-step">
+            <span class="flow-label">Open form</span>
+            <p>The community page displays <code>NewResourceForm</code>, a client-side React component.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-label">Submit</span>
+            <p>Upon submission, the form converts its data into JSON and sends a POST request to the
+              <code>/api/resources</code> route handler.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-label">Validate</span>
+            <p>Try-catch blocks validate required fields, ensure the URL is valid, and query the database to
+              verify the specified community exists.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-label">Save</span>
+            <p>Drizzle ORM inserts the resource into the PostgreSQL "resources" table.</p>
+          </li>
+          <li class="flow-step">
+            <span class="flow-label">Refresh</span>
+            <p><code>router.refresh()</code> reloads the server data to display the newly added resource.</p>
+          </li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-section">
+    <div class="container">
+      <h2>Product architecture</h2>
+      <div class="architecture-row">
+        <div class="arch-step">
+          <h4>Client</h4>
+          <p>React client components handle user input: clicks, form state, filtering.</p>
+        </div>
+        <div class="arch-step">
+          <h4>Next.js server</h4>
+          <p>Server components fetch and render page data. Route handlers validate requests and process database
+            operations.</p>
+        </div>
+        <div class="arch-step">
+          <h4>Drizzle ORM</h4>
+          <p>Translates TypeScript operations into SQL against the schema.</p>
+        </div>
+        <div class="arch-step">
+          <h4>PostgreSQL</h4>
+          <p>Stores users, communities, posts, comments, and profiles permanently.</p>
+        </div>
+      </div>
+
+      <h3 class="section-label">Tech stack</h3>
+      <div class="stack-row">
+        <span class="stack-group frontend">React &middot; Next.js &middot; TypeScript &middot; Tailwind</span>
+        <span class="stack-group data">PostgreSQL &middot; Drizzle ORM</span>
+        <span class="stack-group testing">Jest Testing</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="case-section">
+    <div class="container">
+      <h2>Product decisions &amp; tradeoffs</h2>
+      <div class="decisions-grid">
+        <div class="decision">
+          <h3>Determining core features</h3>
+          <span class="decision-kicker">Depth &gt; breadth</span>
+          <p>I prioritized the core experience&mdash;publishing posts, sharing resources, and organizing
+            events&mdash;over features such as notifications, private messaging, and recommendation algorithms in
+            an MVP.</p>
+          <div class="callout-box">
+            <p><strong>Tradeoff:</strong> this kept the product focused to ensure it could validate whether users
+              found the central community hub valuable. However, it also means the current product may have lower
+              long-term engagement and stickiness as its user base grows.</p>
+          </div>
+        </div>
+        <div class="decision">
+          <h3>Structuring community routing</h3>
+          <span class="decision-kicker">Routing that scales</span>
+          <p>We used one dynamic route based on each community's slug, such as <code>/coding-club</code>, rather
+            than creating a separate page in the codebase for every community.</p>
+          <div class="callout-box">
+            <p><strong>Tradeoff:</strong> this made KlossyKollective scalable, as new communities automatically
+              receive their own page. However, slugs must be unique and carefully validated, and changing a slug
+              can break saved links unless redirects are implemented, increasing maintenance complexity over
+              time.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="site-footer" id="footer">
+  <div class="footer-socials">
+    <a href="https://github.com/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/github-sign.png" alt="GitHub"></a>
+    <a href="https://instagram.com/shreyaonline_" target="_blank" rel="noopener"><img src="assets/footer/instagram.png" alt="Instagram"></a>
+    <a href="https://linkedin.com/in/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/linkedin.png" alt="LinkedIn"></a>
+    <a href="mailto:shreyanallamothu29@gmail.com"><img src="assets/footer/mail.png" alt="Email"></a>
+  </div>
+  this website was coded with &lt;3 by shreya nallamothu
+</footer>
+
+<script src="js/script.js"></script></body>
+</html>

@@ -1,0 +1,51 @@
+/* ---------- Essay ---------- */
+
+.essay-container {
+  max-width: 720px;
+}
+
+.essay-hero {
+  background: var(--bg-lavender);
+  padding: 60px 0 40px;
+}
+
+.essay-back {
+  display: inline-block;
+  color: var(--blue);
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.essay-meta {
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+
+.essay-hero h1 {
+  margin: 0;
+}
+
+.essay-body {
+  background: var(--white);
+  padding: 60px 0 100px;
+}
+
+.essay-body p {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 0 0 20px;
+}
+
+.essay-source {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--bg-light);
+  font-size: 0.9rem;
+  color: var(--text-gray);
+}
+
+.essay-source a {
+  color: var(--blue);
+  font-weight: 600;
+}

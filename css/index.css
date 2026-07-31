@@ -1,0 +1,160 @@
+/* ---------- Hero ---------- */
+
+.hero {
+  background: var(--bg-lavender);
+  padding-bottom: 80px;
+}
+
+.site-header.hero {
+  padding-bottom: 30px; 
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 20px;
+  align-items: stretch;
+  padding-top: 8px;
+}
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-copy {
+  margin-top: auto;
+  margin-bottom: auto;
+  font-family: var(--sans);
+  font-size: 1.6rem;
+  color: var(--blue);
+  max-width: 560px;
+}
+
+.hero-copy .cursor {
+  display: inline-block;
+  width: 2px;
+  background: var(--blue);
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+.editable-hero {
+  outline: none;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.hero-media {
+  text-align: right;
+}
+
+.tagline-marquee {
+  overflow: hidden;
+  margin-bottom: 16px;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 0%, #000 100%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 0%, #000 100%, transparent);
+}
+
+.tagline-track {
+  display: flex;
+  width: max-content;
+  animation: tagline-scroll 12s linear infinite;
+}
+
+.tagline-track span {
+  font-size: 1.1rem;
+  color: var(--text-dark);
+  white-space: nowrap;
+  padding-right: 0.4em;
+}
+
+@keyframes tagline-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tagline-track {
+    animation: none;
+  }
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 350px;
+  margin-left: auto;
+  border-radius: 12px 12px 12px 40px;
+  overflow: hidden;
+  aspect-ratio: 350 / 500;
+  background: #d9d9d9;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.roles-list {
+  text-align: right;
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ---------- About teaser ---------- */
+
+.about-teaser {
+  background: var(--white);
+  padding: 80px 0;
+}
+
+.about-teaser-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.about-photo {
+  border-radius: 8px 60px 8px 8px;
+  overflow: hidden;
+  background: #d9d9d9;
+  aspect-ratio: 4 / 5;
+}
+
+.about-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-teaser p {
+  color: var(--navy);
+  font-size: 1.05rem;
+  margin: 0 0 20px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .hero-grid,
+  .about-teaser-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-media, .roles-list {
+    text-align: left;
+  }
+
+  .hero-photo {
+    margin-left: 0;
+  }
+}

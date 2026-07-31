@@ -1,0 +1,150 @@
+/* ---------- Blog hero ---------- */
+
+.blog-hero {
+  background: var(--white);
+  padding: 60px 0 50px;
+}
+
+.site-header.blog-hero {
+  padding: 24px 48px;
+}
+
+.blog-hero-grid {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 24px;
+  align-items: start;
+  max-width: 1500px;
+}
+
+.blog-hero-text h1 {
+  line-height: 1.2;
+  font-size: 3.5rem;
+}
+
+.blog-hero-text .chip {
+  background: var(--bg-lavender);
+  border-radius: 5px 28px 5px 5px;
+  margin-bottom: 20px;
+}
+
+.blog-hero-text p {
+  color: var(--navy);
+}
+
+.blog-reels {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 4px;
+}
+
+.blog-reels .instagram-media {
+  margin: 0 !important;
+  flex: 1 1 326px;
+}
+
+.blog-footer-row {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.blog-quote {
+  flex: 1 1 320px;
+  color: var(--blue);
+  font-family: var(--serif);
+  font-size: 3rem;
+  margin: 0;
+}
+
+@media (max-width: 1400px) {
+  .blog-hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-reels {
+    grid-column: 1;
+    margin-top: 24px;
+  }
+
+  .blog-footer-row {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+}
+
+.essay-teaser {
+  flex: 0 1 auto;
+}
+
+.essay-teaser-label {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  color: var(--text-gray);
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.essay-teaser-card {
+  display: block;
+  background: #ffffff;
+  border-radius: 8px 40px 8px 8px;
+  padding: 28px 32px;
+  max-width: 640px;
+  transition: transform 0.15s ease;
+}
+
+.essay-teaser-card:hover {
+  transform: translateY(-2px);
+}
+
+.essay-teaser-card h3 {
+  font-family: var(--serif);
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 0 0 10px;
+}
+
+.essay-teaser-card p {
+  color: var(--navy);
+  font-size: 0.98rem;
+  margin: 0 0 14px;
+}
+
+.essay-teaser-link {
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.arrow-ne {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+
+.essay-teaser-card:hover .arrow-ne {
+  transform: translateX(4px);
+}
+
+/* ---------- Blog ---------- */
+
+.blog-section {
+  background: var(--white);
+  padding: 60px 0 90px;
+  min-height: 50vh;
+}
+
+.blog-empty {
+  color: var(--text-gray);
+  font-size: 1.1rem;
+}
