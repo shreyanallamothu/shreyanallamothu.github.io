@@ -25,6 +25,45 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  const tocLinks = document.querySelectorAll('.case-toc a');
+  if (tocLinks.length) {
+    const sections = Array.from(tocLinks)
+      .map((link) => document.querySelector(link.getAttribute('href')))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      tocLinks.forEach((link) => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
+      });
+    };
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActive(entry.target.id);
+        });
+      },
+      { rootMargin: '-40% 0px -50% 0px' }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+  }
+
+  const personaGrid = document.querySelector('.persona-grid');
+  const personaPrev = document.querySelector('.persona-arrow-prev');
+  const personaNext = document.querySelector('.persona-arrow-next');
+  if (personaGrid && personaPrev && personaNext) {
+    const scrollByCard = (direction) => {
+      const card = personaGrid.querySelector('.persona-card');
+      const gap = parseFloat(getComputedStyle(personaGrid).gap) || 0;
+      const distance = card ? card.getBoundingClientRect().width + gap : personaGrid.clientWidth;
+      personaGrid.scrollBy({ left: distance * direction, behavior: 'smooth' });
+    };
+
+    personaPrev.addEventListener('click', () => scrollByCard(-1));
+    personaNext.addEventListener('click', () => scrollByCard(1));
+  }
+
   const form = document.querySelector('.contact-form');
   if (form) {
     form.addEventListener('submit', (e) => {

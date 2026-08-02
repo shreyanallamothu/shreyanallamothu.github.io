@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KlossyKollective &mdash; Shreya Nallamothu</title>
+<title>Kircuit &mdash; Shreya Nallamothu</title>
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/klossykollective.css">
+<link rel="stylesheet" href="css/kircuit.css">
 </head>
 <body>
 
@@ -23,170 +23,298 @@
 
 <section class="case-hero">
   <div class="container case-container">
-    <a class="case-back" href="projects.html">&larr; Back to projects</a>
-    <p class="case-meta">Kode with Klossy &times; Codex &middot; AI Build Lab, 2026</p>
-    <h1>KlossyKollective</h1>
-    <p class="case-subheading">A full-stack community hub for KWK members and alumni</p>
-    <div class="case-meta-row">
-      <span class="chip">Role: AI Build Lab Fellow</span>
-      <span class="chip">React</span>
-      <span class="chip">Next.js</span>
-      <span class="chip">TypeScript</span>
-      <span class="chip">PostgreSQL</span>
-    </div>
+    <p class="case-meta">KODE WITH KLOSSY &times; CODEX</p>
+    <h1>A home for Klossy alumni</h1>
   </div>
 </section>
 
 <section class="case-body">
+  <div class="container case-layout">
 
-  <div class="case-section">
-    <div class="container case-text">
-      <h2>The problem</h2>
-      <div class="callout-box">
-        <p>Kode with Klossy alumni lose touch with each other and the program after their summer ends. There's no
-          shared space to keep collaborating, and organizers have no single tool to run community programming
-          beyond emails.</p>
+    <aside class="case-sidebar">
+      <a class="case-back" href="projects.html">&larr; back</a>
+      <nav class="case-toc">
+        <a href="#problem">PROBLEM</a>
+        <a href="#solution">SOLUTION</a>
+        <a href="#connecting-with-users">CONNECTING WITH USERS</a>
+        <a href="#defining-product-needs">DEFINING PRODUCT NEEDS</a>
+        <a href="#building">BUILDING</a>
+        <a href="#product-tradeoffs">PRODUCT TRADEOFFS</a>
+        <a href="#learnings">LEARNINGS</a>
+      </nav>
+    </aside>
+
+    <main class="case-main">
+
+      <video class="video-placeholder" src="assets/klossykollective photos/demo.mov" autoplay loop muted playsinline></video>
+
+      <div class="case-meta-grid">
+        <div class="case-meta-item">
+          <span class="case-meta-label">Role</span>
+          <p class="case-meta-value">Product Manager &amp; Engineer</p>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Timeline</span>
+          <p class="case-meta-value">June 2026 - July 2026</p>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Team</span>
+          <p class="case-meta-value">3 People</p>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Tech Stack</span>
+          <p class="case-meta-value">React, TypeScript, Tailwind<br>Next.js<br>Drizzle ORM, PostgreSQL</p>
+        </div>
       </div>
 
-      <h2>Product objectives</h2>
-      <ol class="objectives-list">
-        <li><strong>Centralize member experience</strong> with a single destination for events, resources, and
-          community updates.</li>
-        <li><strong>Strengthen community connections</strong> by making it easy for members to discover
-          interest-based communities.</li>
-        <li><strong>Support lifelong engagement</strong> by providing alumni with an ongoing space to network and
-          stay connected with Kode with Klossy.</li>
-      </ol>
-    </div>
-  </div>
+      <p class="case-intro">As a fellow in <strong>Kode With Klossy's AI BuildLab, sponsored by Codex,</strong> I served as
+        product manager and engineer on a team of three, ideating and shipping a product in six weeks. I ran
+        user research, conducted user testing, and owned the product roadmap&mdash;then directed AI coding
+        agents like a technical lead, coding and debugging across the full stack. The result, Kircuit, is a
+        real home base for Klossy alumni across all of their programs.</p>
 
-  <div class="case-section">
-    <div class="container">
-      <h2>Built for discovery, engagement &amp; retention</h2>
-      <div class="pillars-grid">
-        <div>
-          <div class="pillar-group">
-            <h3>For discovery</h3>
-            <span class="pillar-pill">Connect with other women in technology</span>
-            <span class="pillar-pill">Create interest-based communities</span>
+      <div class="case-block" id="problem">
+        <span class="section-label">Problem</span>
+        <h2>Kode with Klossy alumni lose touch with each other and the organization after their summer ends.</h2>
+        <div class="callout-box">
+          <p>There's no shared space to keep collaborating, and organizers have no single tool to run
+            community programming beyond emails. As program alumni ourselves, we experienced this
+            fragmentation firsthand. Recognizing that gap was the catalyst for us to build Kircuit.</p>
+        </div>
+      </div>
+
+      <div class="case-block" id="solution">
+        <span class="section-label">Solution</span>
+        <h2>The Kircuit: A community platform centralizing events, networking, mentorship, and communication
+          for the KWK community</h2>
+        <div class="solution-list">
+          <div class="solution-item">
+            <img src="assets/klossykollective photos/community-hub.png" alt="Community Hub landing page showing interest-based communities like AI for Artists, Indie Game Developers, and Local Climate Action">
+            <p>Build community around shared interests</p>
           </div>
-          <div class="pillar-group">
-            <h3>For engagement</h3>
-            <span class="pillar-pill">Share helpful resources</span>
-            <span class="pillar-pill">Start conversations through posts</span>
+          <div class="solution-item">
+            <img src="assets/klossykollective photos/community-resources.png" alt="Resources panel with a searchable list of community-shared links">
+            <p>Share resources and opportunities</p>
           </div>
-          <div class="pillar-group">
-            <h3>For retention</h3>
-            <span class="pillar-pill">Find community events</span>
+          <div class="solution-item">
+            <div class="media-placeholder solution-placeholder">events near you</div>
+            <p>Find events near you</p>
           </div>
-        </div>
-        <div class="pillars-media">
-          <img src="assets/klossykollective photos/community-hub.png" alt="Community Hub landing page showing interest-based communities like AI for Artists, Indie Game Developers, and Local Climate Action">
-          <img src="assets/klossykollective photos/community-resources.png" alt="Resources panel with a searchable list of community-shared links">
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="case-section">
-    <div class="container">
-      <h2>Feature deep dive: creating a resource</h2>
-      <div class="deepdive-grid">
-        <div class="deepdive-media">
-          <img src="assets/klossykollective photos/resources-list.png" alt="Resources list with searchable community links">
-        </div>
-        <ol class="flow-steps">
-          <li class="flow-step">
-            <span class="flow-label">Open form</span>
-            <p>The community page displays <code>NewResourceForm</code>, a client-side React component.</p>
-          </li>
-          <li class="flow-step">
-            <span class="flow-label">Submit</span>
-            <p>Upon submission, the form converts its data into JSON and sends a POST request to the
-              <code>/api/resources</code> route handler.</p>
-          </li>
-          <li class="flow-step">
-            <span class="flow-label">Validate</span>
-            <p>Try-catch blocks validate required fields, ensure the URL is valid, and query the database to
-              verify the specified community exists.</p>
-          </li>
-          <li class="flow-step">
-            <span class="flow-label">Save</span>
-            <p>Drizzle ORM inserts the resource into the PostgreSQL "resources" table.</p>
-          </li>
-          <li class="flow-step">
-            <span class="flow-label">Refresh</span>
-            <p><code>router.refresh()</code> reloads the server data to display the newly added resource.</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
-
-  <div class="case-section">
-    <div class="container">
-      <h2>Product architecture</h2>
-      <div class="architecture-row">
-        <div class="arch-step">
-          <h4>Client</h4>
-          <p>React client components handle user input: clicks, form state, filtering.</p>
-        </div>
-        <div class="arch-step">
-          <h4>Next.js server</h4>
-          <p>Server components fetch and render page data. Route handlers validate requests and process database
-            operations.</p>
-        </div>
-        <div class="arch-step">
-          <h4>Drizzle ORM</h4>
-          <p>Translates TypeScript operations into SQL against the schema.</p>
-        </div>
-        <div class="arch-step">
-          <h4>PostgreSQL</h4>
-          <p>Stores users, communities, posts, comments, and profiles permanently.</p>
-        </div>
-      </div>
-
-      <h3 class="section-label">Tech stack</h3>
-      <div class="stack-row">
-        <span class="stack-group frontend">React &middot; Next.js &middot; TypeScript &middot; Tailwind</span>
-        <span class="stack-group data">PostgreSQL &middot; Drizzle ORM</span>
-        <span class="stack-group testing">Jest Testing</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="case-section">
-    <div class="container">
-      <h2>Product decisions &amp; tradeoffs</h2>
-      <div class="decisions-grid">
-        <div class="decision">
-          <h3>Determining core features</h3>
-          <span class="decision-kicker">Depth &gt; breadth</span>
-          <p>I prioritized the core experience&mdash;publishing posts, sharing resources, and organizing
-            events&mdash;over features such as notifications, private messaging, and recommendation algorithms in
-            an MVP.</p>
-          <div class="callout-box">
-            <p><strong>Tradeoff:</strong> this kept the product focused to ensure it could validate whether users
-              found the central community hub valuable. However, it also means the current product may have lower
-              long-term engagement and stickiness as its user base grows.</p>
-          </div>
-        </div>
-        <div class="decision">
-          <h3>Structuring community routing</h3>
-          <span class="decision-kicker">Routing that scales</span>
-          <p>We used one dynamic route based on each community's slug, such as <code>/coding-club</code>, rather
-            than creating a separate page in the codebase for every community.</p>
-          <div class="callout-box">
-            <p><strong>Tradeoff:</strong> this made KlossyKollective scalable, as new communities automatically
-              receive their own page. However, slugs must be unique and carefully validated, and changing a slug
-              can break saved links unless redirects are implemented, increasing maintenance complexity over
-              time.</p>
+          <div class="solution-item">
+            <div class="media-placeholder solution-placeholder">alumni network</div>
+            <p>Connect with other Kode with Klossy Alumni</p>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
+      <div class="case-block" id="connecting-with-users">
+        <span class="section-label">Connecting With Users</span>
+        <p class="case-lead">I interviewed 5 users across the Kode with Klossy community. Through 20&ndash;30
+          minute conversations, I uncovered their needs, pain points, and goals. Scroll to see what I learned!</p>
+
+        <div class="persona-carousel">
+          <button type="button" class="persona-arrow persona-arrow-prev" aria-label="Previous persona">&#8249;</button>
+          <div class="persona-carousel-fade persona-carousel-fade-left"></div>
+          <div class="persona-carousel-fade persona-carousel-fade-right"></div>
+          <div class="persona-grid">
+            <div class="persona-card">
+              <h3><span class="persona-icon">&#128100;</span> KWK Alum</h3>
+              <ul>
+                <li>Participated in a recent summer program</li>
+                <li>Wants to stay connected with friends and mentors</li>
+                <li>Struggles to hear about alumni opportunities</li>
+              </ul>
+              <p class="persona-quote">&ldquo;I always find out about events after they've happened.&rdquo;</p>
+            </div>
+            <div class="persona-card">
+              <h3><span class="persona-icon">&#128203;</span> Program Organizer</h3>
+              <ul>
+                <li>Coordinates workshops and community events</li>
+                <li>Relies on email to communicate with alumni</li>
+                <li>Needs an easier way to manage engagement</li>
+              </ul>
+              <p class="persona-quote">&ldquo;Managing updates across different tools is tedious.&rdquo;</p>
+            </div>
+            <div class="persona-card">
+              <h3><span class="persona-icon">&#127891;</span> Current Scholar</h3>
+              <ul>
+                <li>Looking for mentorship and internship advice</li>
+                <li>Wants to connect with alumni in different fields</li>
+                <li>Unsure where to find the right people</li>
+              </ul>
+            </div>
+            <div class="persona-card">
+              <h3><span class="persona-icon">&#127919;</span> Recent Graduate</h3>
+              <ul>
+                <li>Wants to expand their professional network</li>
+                <li>Interested in job postings and internship opportunities</li>
+                <li>Finds it difficult to discover relevant opportunities</li>
+              </ul>
+            </div>
+          </div>
+          <button type="button" class="persona-arrow persona-arrow-next" aria-label="Next persona">&#8250;</button>
+        </div>
+
+        <p class="case-lead">I used these findings to develop two user stories.</p>
+
+        <div class="story-grid">
+          <div class="story-card">
+            <h4>User Story #1: Maya</h4>
+            <p>Maya is a 20-year-old college student who attended KWK camp three years ago. She still thinks
+              fondly of the friends she made in that cohort, but outside of a few scattered group chats, she's
+              lost touch with most of them and has no idea what the newer cohorts are working on. When she logs
+              into the Hub, she finds a community for alumni in her city, posts a question about a career move,
+              and gets three replies within a day.</p>
+          </div>
+          <div class="story-card">
+            <h4>User Story #2: Priya</h4>
+            <p>Priya is a KWK program organizer running community engagement for 200+ alumni across five
+              cities. Before the Hub, she managed events and resource-sharing through a patchwork of
+              spreadsheets, email blasts, and Instagram stories that not all alumni saw. Now she creates an
+              event directly in the Hub, and it's instantly visible to every member of the relevant
+              community&mdash;no more chasing RSVPs by hand. She spends less time on logistics and more time
+              actually building the connections and support alumni need.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-block" id="defining-product-needs">
+        <span class="section-label">Defining Product Needs</span>
+        <h2>I turned my interview insights into product requirements that prioritized connection and
+          discoverability.</h2>
+
+        <div class="needs-table-wrap">
+          <table class="needs-table">
+            <thead>
+              <tr>
+                <th>Product Need</th>
+                <th>Key Requirements</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Build Communities</td>
+                <td>Create public interest-based communities, discover communities from the homepage, and
+                  join groups.</td>
+              </tr>
+              <tr>
+                <td>Enable Discussion</td>
+                <td>Create posts, ask questions, reply within communities, and participate in discussions.</td>
+              </tr>
+              <tr>
+                <td>Share Resources</td>
+                <td>Upload articles, opportunities, and tutorials, and search resources within communities.</td>
+              </tr>
+              <tr>
+                <td>Support Events</td>
+                <td>View upcoming events with dates, times, locations, and descriptions, and allow organizers
+                  to manage community events.</td>
+              </tr>
+              <tr>
+                <td>Member Directory</td>
+                <td>Browse member profiles, search members by name or interests, and connect with alumni,
+                  peers, and mentors.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="proto-grid">
+          <div>
+            <div class="media-placeholder proto-placeholder">journal sketch</div>
+            <p class="media-caption">Prototyping in my journal</p>
+          </div>
+          <div>
+            <div class="media-placeholder proto-placeholder">figma wireframe</div>
+            <p class="media-caption">Wireframing in Figma</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-block" id="building">
+        <span class="section-label">Building</span>
+        <h2>Let's develop this thing!</h2>
+
+        <div class="tech-chip-row">
+          <span class="tech-chip chip-react">FRONTEND: React, TypeScript, Tailwind</span>
+          <span class="tech-chip chip-next">BACKEND: Next.js</span>
+          <span class="tech-chip chip-drizzle">DATABASE: Drizzle ORM, PostgreSQL.</span>
+          <span class="tech-chip chip-jest">TESTING: Jest</span>
+        </div>
+        <p class="case-lead">Through BuildLab, I developed a strong foundation in AI-first development, learning best practices for prompting, testing, and tracing feature workflows. In this example, when an alumna shares a resource with her community, the request flows through the full stack:</p>
+
+        <div class="deepdive-grid">
+          <div class="deepdive-media">
+            <img src="assets/klossykollective photos/resource gif.gif" alt="GIF demoing a user adding a resource in Kircuit" class="gif-placeholder">
+          </div>
+          <ol class="flow-steps">
+            <li class="flow-step">
+              <span class="flow-label">Open form</span>
+              <p>The community page renders <code>NewResourceForm</code>, a client-side React component.</p>
+            </li>
+            <li class="flow-step">
+              <span class="flow-label">Submit</span>
+              <p>On submission, the form converts its data into JSON and sends a POST request to the
+                <code>/api/resources</code> route handler.</p>
+            </li>
+            <li class="flow-step">
+              <span class="flow-label">Validate</span>
+              <p>Try-catch blocks validate required fields, ensure the URL is valid, and query the database to
+                verify the specified community exists.</p>
+            </li>
+            <li class="flow-step">
+              <span class="flow-label">Save</span>
+              <p>Drizzle ORM inserts the resource into the PostgreSQL "resources" table.</p>
+            </li>
+            <li class="flow-step">
+              <span class="flow-label">Refresh</span>
+              <p><code>router.refresh()</code> reloads the server data to display the newly added resource.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="case-block" id="product-tradeoffs">
+        <span class="section-label">Product Tradeoffs</span>
+        <h2>To deliver a usable MVP within our timeline, I focused on solving the community's most critical
+          needs before expanding into engagement features.</h2>
+
+        <span class="tradeoff-kicker">Depth &gt; Breadth</span>
+        <div class="tradeoff-grid">
+          <div class="tradeoff-col">
+            <h4>Tradeoff</h4>
+            <p>I prioritized publishing posts, sharing resources, and organizing events over features like
+              notifications, private messaging, and recommendation algorithms.</p>
+          </div>
+          <div class="tradeoff-col">
+            <h4>Impact</h4>
+            <p>This kept the MVP focused and let us validate the community's core value proposition before
+              investing in additional social features as the user base grows.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-block" id="learnings">
+        <span class="section-label">Learnings</span>
+        <h2>Here's what I'm taking away.</h2>
+
+        <div class="learnings-grid">
+          <div class="learning-col">
+            <h3>Constraints make a product better, not worse.</h3>
+            <p>Every feature I cut didn't have a clear enough scope to survive my initial vision for the
+              product. Learning to say no early forced me to interrogate what our users actually needed and
+              identify what features would really add value.</p>
+          </div>
+          <div class="learning-col">
+            <h3>Product and engineering are not separate disciplines.</h3>
+            <p>Writing the PRD and prompting the AI coding agent were part of the same job, not separate ones.
+              Knowing what to build and how to scope it well mattered just as much as knowing how to code it.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
 </section>
 
 <footer class="site-footer" id="footer">
