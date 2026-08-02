@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RecycleRight &mdash; Shreya Nallamothu</title>
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/recycleright.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="logo">Shreya Nallamothu</a>
+  <nav class="site-nav">
+    <a href="projects.html" class="active">projects</a>
+    <a href="advocacy.html">i passed a law!</a>
+    <a href="blog.html">blog</a>
+    <a href="about.html">about</a>
+    <a href="#footer">contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+</header>
+
+<section class="case-hero">
+  <div class="container case-container">
+    <p class="case-meta">TOWN OF NORMAL</p>
+    <h1>An ML-powered app that takes the guesswork out of recycling</h1>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container case-layout">
+
+    <aside class="case-sidebar">
+      <a class="case-back" href="projects.html">&larr; back</a>
+      <nav class="case-toc">
+        <a href="#problem">PROBLEM</a>
+        <a href="#solution">SOLUTION</a>
+        <a href="#process">THE PROCESS</a>
+        <a href="#building">BUILDING</a>
+        <a href="#learnings">LEARNINGS</a>
+      </nav>
+      <nav class="case-links">
+        <a href="#" target="_blank" rel="noopener">Github</a>
+        <a href="#" target="_blank" rel="noopener">Colab Notebook</a>
+      </nav>
+    </aside>
+
+    <main class="case-main">
+
+      <div class="media-placeholder video-placeholder">demo gif</div>
+
+      <div class="case-meta-grid case-meta-grid-3">
+        <div class="case-meta-item">
+          <span class="case-meta-label">Role</span>
+          <p class="case-meta-value">Engineer</p>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Timeline</span>
+          <p class="case-meta-value">Oct - Dec 2024</p>
+        </div>
+        <div class="case-meta-item">
+          <span class="case-meta-label">Tech Stack</span>
+          <p class="case-meta-value">HTML, CSS<br>Python, Flask<br>PyTorch</p>
+        </div>
+      </div>
+
+      <p class="case-intro">As a member of the <strong>Town of Normal Youth Council</strong>, I built
+        <strong>RecycleRight</strong>, an ML-powered web app that helps users correctly sort recyclables and
+        find nearby disposal options. I owned the project end-to-end, from training a custom machine learning
+        model to 95% accuracy to developing and deploying the application. After presenting it to the Town
+        Council, RecycleRight was adopted by the McLean County Ecology Action Center and has more than 600+
+        user uploads to date.</p>
+
+      <div class="case-block" id="problem">
+        <span class="section-label">Problem</span>
+        <h2>This is my dad!</h2>
+        <div class="problem-grid">
+          <div class="problem-text">
+            <p>Like most parents, he doesn't like to waste. Growing up, I noticed how much effort he went
+              through to research how to properly dispose of everyday items like pizza boxes and plastic bags.
+              It's a habit I've inherited, and we're not alone.</p>
+            <p>A 2025 survey from <a href="#" target="_blank" rel="noopener">The Harris Poll</a> found that
+              while nearly 90% of Americans think that recycling is important, household recycling rates
+              remain at just 32%&mdash;largely due to confusion around proper recycling practices. For
+              example, many people don't know that pizza boxes with grease can't be recycled, or that plastic
+              bags cannot be recycled curbside.</p>
+            <p>I created RecycleRight to help not just my dad, but everyone who wants to recycle correctly
+              without the confusion or endless Googling.</p>
+          </div>
+          <div class="media-placeholder problem-media">my dad</div>
+        </div>
+      </div>
+
+      <div class="case-block" id="solution">
+        <span class="section-label">Solution</span>
+        <h2>RecycleRight is an ML-powered app that helps users correctly sort recyclables and find nearby
+          disposal options.</h2>
+        <p class="case-lead">Simply upload a photo of an item you're unsure how to recycle, and RecycleRight
+          will tell you whether it's recyclable and how to dispose of it properly. Then, enter your zip code
+          to get a list of nearby drop-off locations and facilities.</p>
+        <p class="case-lead">RecycleRight provides relevant, location-based information for everything from
+          batteries to clothing to household food waste.</p>
+      </div>
+
+      <div class="case-block" id="process">
+        <span class="section-label">The Process</span>
+        <h2>Getting close to the problem was key.</h2>
+        <p class="case-lead">As part of this project through my town's Youth Council, I toured local waste
+          management and recycling facilities to conduct firsthand user research. While conducting interviews
+          and observing how the system operates in practice, I learned that when items are mis-sorted,
+          facility workers have to painstakingly manually remove them, which slows processing and increases
+          costs. The research shaped several key product decisions, from a photo-first interface to clear,
+          actionable disposal instructions designed to eliminate guesswork.</p>
+      </div>
+
+      <div class="case-block" id="building">
+        <span class="section-label">Building</span>
+        <h2>The real work began once I started building.</h2>
+
+        <div class="tech-chip-row">
+          <span class="tech-chip chip-frontend">FRONTEND: HTML, CSS</span>
+          <span class="tech-chip chip-backend">BACKEND: Python, Flask</span>
+          <span class="tech-chip chip-ml">ML MODEL: PyTorch</span>
+        </div>
+
+        <p class="case-lead">This was my first time training a machine learning model. I made the decision to
+          compile and label a custom dataset of common household items because no existing dataset captured
+          the categories and disposal methods RecycleRight needed to support.</p>
+        <p class="case-lead">Then, I began fine-tuning a ResNet50 convolutional neural network to classify
+          images of recyclables into disposal categories. It was rough at first&hellip;</p>
+
+        <pre class="code-block">Training loss 2.10434 | Training accuracy: 27.44141
+Testing loss 2.13891 | Testing accuracy: 23.21429</pre>
+
+        <p class="case-lead">But after many (many) batches and experimenting with hyperparameters like
+          preprocessing and training step sizes, I got my model up to 95% testing accuracy!</p>
+
+        <pre class="code-block">Batch 505
+Training loss 0.08152 | Training accuracy: 97.71492
+Testing loss 0.12933 | Testing accuracy: 95.71850</pre>
+
+        <a class="notebook-cta" href="#" target="_blank" rel="noopener">Check out my Colab Notebook and PyTorch Model!</a>
+
+        <p class="case-lead">The most challenging part of building RecycleRight was learning how to integrate
+          the front and back end with Flask, since this was my first time deploying a full-stack ML
+          application. I used Flask to integrate the model with a clean, beautiful front end. My goal was to
+          make the page as intuitive as possible to encourage everyday use!</p>
+      </div>
+
+      <div class="case-block" id="learnings">
+        <span class="section-label">Learnings</span>
+        <h2>Here's what I'm taking away.</h2>
+
+        <div class="learnings-grid">
+          <div class="learning-col">
+            <h3>Real-world problems are messier than technical ones.</h3>
+            <p>Building the model was challenging, but understanding recycling rules, regional differences,
+              and how people actually dispose of waste was more challenging&mdash;but also what made this tool
+              valuable.</p>
+          </div>
+          <div class="learning-col">
+            <h3>Better data often matters more than better models.</h3>
+            <p>Collecting and labeling a quality dataset myself had a greater impact than trying increasingly
+              complex architectures.</p>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</section>
+
+<footer class="site-footer" id="footer">
+  <div class="footer-socials">
+    <a href="https://github.com/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/github-sign.png" alt="GitHub"></a>
+    <a href="https://instagram.com/shreyaonline_" target="_blank" rel="noopener"><img src="assets/footer/instagram.png" alt="Instagram"></a>
+    <a href="https://linkedin.com/in/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/linkedin.png" alt="LinkedIn"></a>
+    <a href="mailto:shreyanallamothu29@gmail.com"><img src="assets/footer/mail.png" alt="Email"></a>
+  </div>
+  this website was coded with &lt;3 by shreya nallamothu
+</footer>
+
+<script src="js/script.js"></script></body>
+</html>
