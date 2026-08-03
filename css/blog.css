@@ -129,11 +129,12 @@
 
 .arrow-ne {
   display: inline-block;
+  vertical-align: middle;
   transition: transform 0.2s ease;
 }
 
 .essay-teaser-card:hover .arrow-ne {
-  transform: translateX(4px);
+  transform: rotate(45deg);
 }
 
 /* ---------- Blog ---------- */

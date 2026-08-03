@@ -73,4 +73,32 @@ document.addEventListener('DOMContentLoaded', () => {
       if (note) note.textContent = "Thanks — I'll get back to you soon!";
     });
   }
+
+  const cursorCaption = document.getElementById('cursorCaption');
+  const copyEmailBtn = document.querySelector('.footer-copy-email');
+  if (cursorCaption && copyEmailBtn) {
+    const defaultCaption = copyEmailBtn.dataset.caption || 'copy email';
+
+    copyEmailBtn.addEventListener('mouseenter', () => {
+      cursorCaption.textContent = defaultCaption;
+      cursorCaption.classList.add('visible');
+    });
+
+    copyEmailBtn.addEventListener('mousemove', (e) => {
+      cursorCaption.style.left = e.clientX + 'px';
+      cursorCaption.style.top = e.clientY + 'px';
+    });
+
+    copyEmailBtn.addEventListener('mouseleave', () => {
+      cursorCaption.classList.remove('visible');
+    });
+
+    copyEmailBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(copyEmailBtn.dataset.email);
+      cursorCaption.textContent = 'copied!';
+      setTimeout(() => {
+        cursorCaption.textContent = defaultCaption;
+      }, 1200);
+    });
+  }
 });

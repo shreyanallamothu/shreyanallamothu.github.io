@@ -10,6 +10,14 @@
   margin: 0 0 20px;
 }
 
+.about-full .drag-hint {
+  text-align: center;
+  font-style: italic;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin: 0 0 8px;
+}
+
 .subheading {
   font-family: var(--sans);
   font-style: italic;
@@ -28,27 +36,45 @@
   margin-bottom: 6px;
 }
 
-/* ---------- Photo gallery ---------- */
+/* ---------- Photo collage ---------- */
 
-.photo-gallery {
-  background: var(--bg-light);
-  padding: 0 0 80px;
+.about-collage {
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 24px;
+  min-height: 880px;
 }
 
-.photo-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+.about-text {
+  position: absolute;
+  top: 12px;
+  left: 384px;
+  width: 632px;
+  z-index: 2;
 }
 
 .photo-item {
-  position: relative;
+  position: absolute;
   margin: 0;
-  aspect-ratio: 4 / 5;
-  border-radius: 8px 32px 8px 8px;
+  border-radius: 8px 8px 8px 8px;
   overflow: hidden;
   background: #d9d9d9;
   cursor: none;
+  box-shadow: 0 14px 30px rgba(20, 20, 107, 0.18);
+  z-index: 1;
+  transition: transform 0.25s ease;
+}
+
+.photo-item:hover {
+  z-index: 3;
+}
+
+.photo-item.dragging {
+  z-index: 20;
+  transition: none;
+  cursor: grabbing;
+  user-select: none;
 }
 
 .photo-item img {
@@ -58,31 +84,67 @@
   display: block;
 }
 
-.cursor-caption {
-  position: fixed;
-  top: 0;
-  left: 0;
-  transform: translate(-50%, -50%);
-  background: var(--blue);
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 0.95rem;
-  padding: 8px 18px;
-  border-radius: 20px 20px 20px 4px;
-  white-space: nowrap;
-  pointer-events: none;
-  opacity: 0;
-  z-index: 1000;
-  transition: opacity 0.15s ease;
-}
+/* my signature lemon raspberry cake */
+.scatter-1 { top: 210px; left: 58px; width: 166px; height: 205px; transform: rotate(-3deg); }
+.scatter-1:hover { transform: rotate(-3deg) scale(1.06); }
 
-.cursor-caption.visible {
-  opacity: 1;
-}
+/* performative reading */
+.scatter-2 { top: 430px; left: 142px; width: 212px; height: 159px; transform: rotate(-4deg); }
+.scatter-2:hover { transform: rotate(-4deg) scale(1.06); }
 
-@media (max-width: 860px) {
-  .photo-grid {
+/* foraging w/ friends */
+.scatter-3 { top: 610px; left: 300px; width: 197px; height: 212px; transform: rotate(-10deg); }
+.scatter-3:hover { transform: rotate(-10deg) scale(1.06); }
+
+/* hiking around appalachia */
+.scatter-4 { top: -6px; left: 139px; width: 197px; height: 205px; transform: rotate(-6deg); }
+.scatter-4:hover { transform: rotate(-6deg) scale(1.06); }
+
+/* showing off my duke spirit */
+.scatter-5 { top: 25px; left: 1127px; width: 166px; height: 178px; transform: rotate(4deg); }
+.scatter-5:hover { transform: rotate(4deg) scale(1.06); }
+
+/* hacking! */
+.scatter-6 { top: 220px; left: 1042px; width: 166px; height: 151px; transform: rotate(3deg); }
+.scatter-6:hover { transform: rotate(3deg) scale(1.06); }
+
+/* fueling my stationery addiction @ muji */
+.scatter-7 { top: 400px; left: 1210px; width: 182px; height: 235px; transform: rotate(-2deg); }
+.scatter-7:hover { transform: rotate(-2deg) scale(1.06); }
+
+/* organizing a school supply drive */
+.scatter-8 { top: 644px; left: 582px; width: 182px; height: 136px; transform: rotate(5deg); }
+.scatter-8:hover { transform: rotate(5deg) scale(1.06); }
+
+/* i love nature! */
+.scatter-9 { top: 644px; left: 900px; width: 220px; height: 136px; transform: rotate(-4deg); }
+.scatter-9:hover { transform: rotate(-4deg) scale(1.06); }
+
+@media (max-width: 1400px) {
+  .about-collage {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    min-height: 0;
+  }
+
+  .about-text {
+    position: static;
+    grid-column: 1 / -1;
+    width: auto;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .photo-item {
+    position: static;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .photo-item img {
+    height: auto;
   }
 }
 
@@ -101,9 +163,5 @@
     color: var(--white);
     font-size: 0.8rem;
     padding: 8px 12px;
-  }
-
-  .cursor-caption {
-    display: none;
   }
 }

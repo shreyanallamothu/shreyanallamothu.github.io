@@ -18,6 +18,11 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.03);
 }
 
 .project-card .project-thumb {
@@ -30,31 +35,6 @@
   overflow: hidden;
 }
 
-.project-glaze {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  text-align: center;
-  background: rgba(190, 197, 224, 0.90);
-  backdrop-filter: blur(3px);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.project-card:hover .project-glaze {
-  opacity: 1;
-}
-
-.project-glaze p {
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 3rem;
-  margin: 0;
-}
-
 .project-card .project-thumb img,
 .project-card .project-thumb video {
   display: block;
@@ -64,11 +44,35 @@
 }
 
 .project-card h3 {
-  color: var(--text-dark);
+  color: var(--blue);
   font-family: var(--sans);
   font-weight: 700;
   font-size: 1.4rem;
   margin: 0;
+}
+
+.project-title-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.project-tag {
+  color: var(--text-gray);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.project-card {
+  cursor: none;
+}
+
+@media (pointer: coarse) {
+  .project-card {
+    cursor: auto;
+  }
 }
 
 .tech-tag {

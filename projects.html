@@ -26,48 +26,60 @@
     <h1>I've built...</h1>
 
     <div class="projects-grid">
-      <a class="project-card" href="kircuit.html">
+      <a class="project-card" href="kircuit.html" data-caption="view the build">
         <div class="project-thumb">
           <video src="assets/klossykollective photos/demo.mov" autoplay loop muted playsinline></video>
-          <div class="project-glaze">
-            <p>A full stack community hub for Kode with Klossy</p>
-          </div>
         </div>
-        <h3>Kircuit</h3>
+        <div class="project-title-row">
+          <h3>Kircuit</h3>
+          <span class="project-tag">KODE WITH KLOSSY x CODEX</span>
+        </div>
       </a>
-      <a class="project-card" href="recycleright.html">
+      <a class="project-card" href="recycleright.html" data-caption="explore + demo">
         <div class="project-thumb"><img src="assets/recycleright photos/rrdemo.gif" alt="RecycleRight demo"></div>
-        <h3>RecycleRight</h3>
+        <div class="project-title-row">
+          <h3>RecycleRight</h3>
+          <span class="project-tag">TOWN OF NORMAL YOUTH COUNCIL</span>
+        </div>
       </a>
     </div>
 
     <div class="projects-grid row-3">
-      <a class="project-card" href="#">
-        <div class="project-thumb"><img src="assets/projects/shenavigates.jpg" alt="" onerror="this.remove()"></div>
-        <h3>SheNavigates</h3>
-        <span class="tech-tag">Flask</span>
+      <a class="project-card" href="https://devpost.com/software/shenavigates-q1thno" target="_blank" rel="noopener" data-caption="view on devpost">
+        <div class="project-thumb"><video src="assets/SheNavigates Demo _ FidHacks 2026.mp4" autoplay loop muted playsinline></video></div>
+        <div class="project-title-row">
+          <h3>SheNavigates</h3>
+          <span class="project-tag">FIDELITY HACKS 2026</span>
+        </div>
       </a>
-      <a class="project-card" href="#">
-        <div class="project-thumb"><img src="assets/projects/coffeehouse.jpg" alt="" onerror="this.remove()"></div>
-        <h3>CoffeeHouse</h3>
+      <a class="project-card" href="https://github.com/shreyanallamothu/markov-chain-model" target="_blank" rel="noopener" data-caption="view on github">
+        <div class="project-thumb"><img src="assets/markov.png" alt="Markov Chain Model for Text Generation"></div>
+        <div class="project-title-row">
+          <h3>Markov Chain Model for Text Generation</h3>
+        </div>
       </a>
-      <a class="project-card" href="#">
-        <div class="project-thumb"><img src="assets/projects/stumble.jpg" alt="" onerror="this.remove()"></div>
-        <h3>Stumble</h3>
+      <a class="project-card" href="https://dukecoffeehouse.netlify.app/" target="_blank" rel="noopener" data-caption="visit site">
+        <div class="project-thumb"><video src="assets/coffeehouse.mov" autoplay loop muted playsinline></video></div>
+        <div class="project-title-row">
+          <h3>Duke Coffeehouse</h3>
+        </div>
       </a>
     </div>
   </div>
 </section>
+
+<div class="cursor-caption" id="cursorCaption"></div>
 
 <footer class="site-footer" id="footer">
   <div class="footer-socials">
     <a href="https://github.com/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/github-sign.png" alt="GitHub"></a>
     <a href="https://instagram.com/shreyaonline_" target="_blank" rel="noopener"><img src="assets/footer/instagram.png" alt="Instagram"></a>
     <a href="https://linkedin.com/in/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/linkedin.png" alt="LinkedIn"></a>
-    <a href="mailto:shreyanallamothu29@gmail.com"><img src="assets/footer/mail.png" alt="Email"></a>
+    <button type="button" class="footer-copy-email" data-email="shreyanallamothu29@gmail.com" data-caption="copy email"><img src="assets/footer/mail.png" alt="Email"></button>
   </div>
   this website was coded with &lt;3 by shreya nallamothu
 </footer>
 
-<script src="js/script.js"></script></body>
+<script src="js/script.js"></script>
+<script src="js/project-tags.js"></script></body>
 </html>
