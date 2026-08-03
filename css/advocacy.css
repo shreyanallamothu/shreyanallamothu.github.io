@@ -199,7 +199,7 @@
 }
 
 .timeline-date {
-  font-family: 'Averia Serif Libre', var(--sans);
+  font-family: var(--sans);
   color: var(--blue);
   font-size: 0.95rem;
   padding-top: 4px;
