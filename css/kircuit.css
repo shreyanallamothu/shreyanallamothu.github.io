@@ -67,6 +67,7 @@
 .case-main {
   min-width: 0;
   max-width: 900px;
+  overflow: hidden;
 }
 
 .case-block {
@@ -583,5 +584,9 @@ img.proto-placeholder {
   .case-meta-grid {
     grid-template-columns: 1fr 1fr;
     row-gap: 20px;
+  }
+
+  .tech-chip-row {
+    width: 100%;
   }
 }

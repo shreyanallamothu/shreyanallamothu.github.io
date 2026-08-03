@@ -81,6 +81,16 @@
   }
 }
 
+@media (max-width: 480px) {
+  .blog-hero-text h1 {
+    font-size: 2.3rem;
+  }
+
+  .blog-quote {
+    font-size: 2rem;
+  }
+}
+
 .essay-teaser {
   flex: 0 1 auto;
 }

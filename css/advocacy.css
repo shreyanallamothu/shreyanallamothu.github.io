@@ -113,6 +113,7 @@
   gap: 24px;
   overflow-x: auto;
   scroll-snap-type: x proximity;
+  scroll-padding: 0 64px;
   scroll-behavior: smooth;
   padding: 0 64px;
 }
@@ -239,6 +240,11 @@
     grid-template-columns: 1fr;
   }
 
+  .timeline-copy {
+    padding-left: 0;
+    margin-top: 16px;
+  }
+
   .stats-column {
     flex-direction: row;
     flex-wrap: wrap;
@@ -247,5 +253,38 @@
 
   .stat {
     text-align: left;
+  }
+
+  .photo-carousel-full .carousel-track {
+    padding: 0 40px;
+  }
+
+  .photo-carousel-full .carousel-track img {
+    height: 220px;
+  }
+
+  .definition-popup {
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    top: auto;
+    width: auto;
+    max-width: none;
+  }
+
+  .definition-popup::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-carousel-full .carousel-track {
+    padding: 0 32px;
+    gap: 16px;
+  }
+
+  .photo-carousel-full .carousel-track img {
+    height: 160px;
   }
 }

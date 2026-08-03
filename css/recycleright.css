@@ -322,4 +322,8 @@
   .learnings-grid {
     grid-template-columns: 1fr;
   }
+
+  .tech-chip-row {
+    width: 100%;
+  }
 }

@@ -20,6 +20,7 @@
 .hero-left {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .hero-copy {
@@ -49,6 +50,7 @@
 
 .hero-media {
   text-align: right;
+  min-width: 0;
 }
 
 .tagline-marquee {
@@ -137,7 +139,7 @@
 }
 
 .about-teaser p {
-  color: var(--navy);
+  color: var(--text-dark);
   font-size: 1.05rem;
   margin: 0 0 20px;
 }

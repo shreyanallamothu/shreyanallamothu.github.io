@@ -25,6 +25,10 @@
   transform: scale(1.03);
 }
 
+.project-card {
+  min-width: 0;
+}
+
 .project-card .project-thumb {
   position: relative;
   aspect-ratio: 3 / 2;
@@ -148,10 +152,29 @@
   }
 
   .reels-row {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .content-footnote {
     grid-column: 1;
+  }
+
+  .container {
+    padding: 0 24px;
+  }
+
+  .project-title-row {
+    flex-wrap: wrap;
+    row-gap: 4px;
+  }
+
+  .project-tag {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 480px) {
+  .reels-row {
+    grid-template-columns: 1fr;
   }
 }
