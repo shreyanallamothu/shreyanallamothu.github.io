@@ -1,0 +1,132 @@
+.recipe-hero {
+  background: var(--white);
+  padding: 48px 0 56px;
+}
+
+.recipe-container {
+  max-width: 760px;
+}
+
+.recipe-back {
+  display: inline-block;
+  color: var(--blue);
+  font-weight: 600;
+  margin-bottom: 48px;
+}
+
+.recipe-back:hover {
+  transform: translateX(-3px);
+}
+
+.recipe-hero h1 {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  line-height: 1.05;
+  margin: 0 0 24px;
+}
+
+.recipe-intro {
+  color: var(--navy);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 650px;
+}
+
+.recipe-body {
+  background: var(--white);
+  padding: 0 0 96px;
+}
+
+.recipe-section h2 {
+  color: var(--blue);
+  font-size: 1.65rem;
+  margin: 0 0 22px;
+}
+
+.ingredients-section {
+  border-top: 1px solid rgba(20, 20, 107, 0.14);
+  padding-top: 48px;
+}
+
+.instructions-section {
+  margin-top: 64px;
+}
+
+.recipe-ingredients,
+.recipe-steps {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-ingredients {
+  list-style: none;
+}
+
+.recipe-ingredients li {
+  color: var(--navy);
+  padding: 4px 0;
+}
+
+.recipe-steps {
+  counter-reset: recipe-step;
+  list-style: none;
+}
+
+.recipe-steps li {
+  color: var(--navy);
+  counter-increment: recipe-step;
+  margin-bottom: 24px;
+  padding-left: 34px;
+  position: relative;
+}
+
+.recipe-steps li::before {
+  color: var(--blue);
+  content: counter(recipe-step);
+  display: block;
+  font-family: var(--serif);
+  font-size: 1rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.recipe-steps strong {
+  color: var(--blue);
+}
+
+.recipe-source {
+  border-top: 1px solid rgba(20, 20, 107, 0.14);
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  margin: 52px 0 0;
+  padding-top: 22px;
+}
+
+.recipe-source a {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.recipe-source a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 760px) {
+  .recipe-hero {
+    padding: 36px 0 44px;
+  }
+
+  .recipe-back {
+    margin-bottom: 38px;
+  }
+
+  .recipe-hero h1 {
+    font-size: clamp(2.6rem, 13vw, 4rem);
+  }
+
+  .recipe-body {
+    padding-bottom: 72px;
+  }
+}
