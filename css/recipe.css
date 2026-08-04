@@ -11,11 +11,15 @@
   display: inline-block;
   color: var(--blue);
   font-weight: 600;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
   margin-bottom: 48px;
 }
 
 .recipe-back:hover {
   transform: translateX(-3px);
+  text-decoration-thickness: 2px;
 }
 
 .recipe-hero h1 {

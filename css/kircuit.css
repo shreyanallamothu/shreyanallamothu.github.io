@@ -185,9 +185,6 @@ img.proto-placeholder {
 }
 
 img.proto-wireframe {
-  aspect-ratio: auto;
-  height: auto;
-  object-fit: contain;
   object-position: top;
 }
 
