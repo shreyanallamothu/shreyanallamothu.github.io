@@ -422,7 +422,7 @@ img.proto-wireframe {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 32px;
-  width: calc(100% + 180px);
+  width: 100%;
 }
 
 .tech-chip {
