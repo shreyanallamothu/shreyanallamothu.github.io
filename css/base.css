@@ -100,9 +100,9 @@ img {
 
 .pill-button {
   display: inline-block;
-  background: var(--white);
+  background: var(--blue);
   font-family: "Averia Serif Libre";
-  color: var(--blue);
+  color: var(--white);
   font-weight: 600;
   padding: 18px 28px;
   border-radius: 5px 28px 5px 5px;

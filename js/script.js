@@ -8,23 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  const editableHero = document.querySelector('.editable-hero');
-  if (editableHero) {
-    const defaultHTML = editableHero.innerHTML;
-
-    editableHero.addEventListener('paste', (e) => {
-      e.preventDefault();
-      const text = (e.clipboardData || window.clipboardData).getData('text/plain');
-      document.execCommand('insertText', false, text);
-    });
-
-    editableHero.addEventListener('blur', () => {
-      if (!editableHero.textContent.trim()) {
-        editableHero.innerHTML = defaultHTML;
-      }
-    });
-  }
-
   const tocLinks = document.querySelectorAll('.case-toc a');
   if (tocLinks.length) {
     const sections = Array.from(tocLinks)

@@ -1,7 +1,7 @@
 /* ---------- Hero ---------- */
 
 .hero {
-  background: var(--bg-light);
+  background: var(--white);
   padding-bottom: 80px;
 }
 
@@ -25,11 +25,16 @@
 
 .hero-copy {
   margin-top: 1.6rem;
-  margin-bottom: auto;
-  font-family: var(--sans);
+  margin-bottom: 0;
+  font-family: var(--serif);
   font-size: 2rem;
   color: var(--blue);
   max-width: 500px;
+}
+
+.hero-left .pill-row {
+  margin-top: 16px;
+  margin-bottom: 24px;
 }
 
 .hero-copy .cursor {
@@ -38,10 +43,6 @@
   background: var(--blue);
   margin-left: 2px;
   animation: blink 1s step-end infinite;
-}
-
-.editable-hero {
-  outline: none;
 }
 
 @keyframes blink {
