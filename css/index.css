@@ -1,7 +1,7 @@
 /* ---------- Hero ---------- */
 
 .hero {
-  background: var(--bg-lavender);
+  background: var(--bg-light);
   padding-bottom: 80px;
 }
 
