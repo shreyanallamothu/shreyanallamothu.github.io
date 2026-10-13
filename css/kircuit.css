@@ -273,12 +273,12 @@ img.proto-wireframe {
 
 .persona-carousel-fade-left {
   left: 0;
-  background: linear-gradient(to right, var(--white), rgba(248, 246, 244, 0));
+  background: linear-gradient(to right, var(--white), rgba(253, 252, 251, 0));
 }
 
 .persona-carousel-fade-right {
   right: 0;
-  background: linear-gradient(to left, var(--white), rgba(248, 246, 244, 0));
+  background: linear-gradient(to left, var(--white), rgba(253, 252, 251, 0));
 }
 
 .persona-arrow {

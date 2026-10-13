@@ -4,10 +4,10 @@
   --blue: #2323e6;
   --navy: #14146b;
   --bg-lavender: #e9ecfb;
-  --bg-light: #f6f6f7;
+  --bg-light: var(--white);
   --text-dark: #171717;
   --text-gray: #8a8a8a;
-  --white: #f8f6f4;
+  --white: #fdfcfb;
   --serif: 'Averia Serif Libre', Georgia, serif;
   --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
