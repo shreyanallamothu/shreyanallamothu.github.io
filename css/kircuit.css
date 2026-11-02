@@ -10,9 +10,9 @@
 }
 
 .case-meta {
-  font-family: var(--sans);
+  
   color: var(--text-gray);
-  font-size: 0.9rem;
+  
   margin: 0 0 8px;
 }
 
@@ -44,7 +44,7 @@
 .case-back {
   display: inline-block;
   color: var(--blue);
-  font-weight: 600;
+  
   margin-bottom: 28px;
 }
 
@@ -56,7 +56,7 @@
 
 .case-toc a {
   color: var(--navy);
-  font-size: 0.95rem;
+  
 }
 
 .case-toc a:hover,
@@ -76,37 +76,37 @@
 }
 
 .case-block h2 {
-  font-size: 1.7rem;
+  
   margin: 0 0 24px;
   max-width: 720px;
 }
 
 .case-intro {
   color: var(--navy);
-  font-size: 1.05rem;
+  
   margin: 32px 0 64px;
 }
 
 .case-lead {
   color: var(--navy);
-  font-size: 1.05rem;
+  
   margin: 0 0 28px;
 }
 
 .section-label {
   display: block;
-  font-family: var(--sans);
+  
   color: var(--text-gray);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.8rem;
-  font-weight: 700;
+  
+  
+  
   margin: 0 0 12px;
 }
 
 .callout-box {
   color: var(--navy);
-  font-size: 1.05rem;
+  
   margin: 0;
 }
 
@@ -122,9 +122,9 @@
   border: 1px dashed #c9c9cc;
   border-radius: 8px 32px 8px 8px;
   color: var(--text-gray);
-  font-size: 0.85rem;
+  
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -149,20 +149,20 @@
 
 .case-meta-label {
   display: block;
-  font-family: var(--sans);
+  
   color: var(--text-gray);
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  font-weight: 700;
-  font-size: 0.85rem;
+  
+  
+  
   margin-bottom: 8px;
 }
 
 .case-meta-value {
   color: var(--text-gray);
-  font-size: 1rem;
+  
   margin: 0;
-  line-height: 1.4;
+  
 }
 
 .solution-placeholder {
@@ -195,9 +195,9 @@ img.proto-wireframe {
 }
 
 .media-caption {
-  font-family: var(--sans);
+  
   color: var(--text-gray);
-  font-size: 0.9rem;
+  
   text-align: center;
   margin: 0;
 }
@@ -225,9 +225,9 @@ img.proto-wireframe {
 
 .solution-item p {
   color: var(--text-gray);
-  font-family: var(--sans);
-  font-style: 600;
-  font-size: 1.15rem;
+  
+  
+  
   margin: 0;
 }
 
@@ -292,8 +292,8 @@ img.proto-wireframe {
   border-radius: 50%;
   background: var(--white);
   color: var(--blue);
-  font-size: 1.4rem;
-  line-height: 1;
+  
+  
   cursor: pointer;
   box-shadow: 0 6px 18px rgba(20, 20, 107, 0.18);
   display: flex;
@@ -323,12 +323,12 @@ img.proto-wireframe {
 }
 
 .persona-icon {
-  font-size: 1.1rem;
+  
   display: inline-block;
 }
 
 .persona-card h3 {
-  font-size: 1.1rem;
+  
   margin: 0 0 8px;
 }
 
@@ -336,7 +336,7 @@ img.proto-wireframe {
   margin: 0 0 10px;
   padding-left: 20px;
   color: var(--navy);
-  font-size: 0.95rem;
+  
 }
 
 .persona-card li {
@@ -344,10 +344,10 @@ img.proto-wireframe {
 }
 
 .persona-quote {
-  font-family: var(--sans);
+  
   font-style: italic;
   color: var(--navy);
-  font-size: 0.98rem;
+  
   margin: 0;
   border-top: 1px solid rgba(35, 35, 230, 0.15);
   padding-top: 8px;
@@ -360,16 +360,16 @@ img.proto-wireframe {
 }
 
 .story-card h4 {
-  font-family: var(--serif);
+  
   color: var(--blue);
-  font-weight: 400;
-  font-size: 1.15rem;
+  
+  
   margin: 0 0 12px;
 }
 
 .story-card p {
   color: var(--navy);
-  font-size: 0.98rem;
+  
   margin: 0;
 }
 
@@ -389,16 +389,16 @@ img.proto-wireframe {
 .needs-table td {
   text-align: left;
   padding: 16px 20px;
-  font-size: 0.95rem;
+  
 }
 
 .needs-table th {
   color: var(--text-dark);
-  font-family: var(--sans);
-  font-weight: 700;
-  font-size: 0.85rem;
+  
+  
+  
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  
 }
 
 .needs-table td {
@@ -406,7 +406,7 @@ img.proto-wireframe {
 }
 
 .needs-table td:first-child {
-  font-weight: 700;
+  
   white-space: nowrap;
 }
 
@@ -429,8 +429,8 @@ img.proto-wireframe {
   flex: 0 0 auto;
   padding: 9px 18px;
   color: var(--white);
-  font-weight: 600;
-  font-size: 0.9rem;
+  
+  
 }
 
 .chip-react { background: #ec1ccb; }
@@ -486,29 +486,29 @@ img.proto-wireframe {
 
 .flow-step .flow-label {
   display: inline-block;
-  font-family: var(--sans);
-  font-weight: 700;
+  
+  
   color: var(--blue);
-  letter-spacing: 0.04em;
+  
   text-transform: uppercase;
-  font-size: 0.85rem;
+  
   margin-bottom: 6px;
 }
 
 .flow-step p {
   margin: 0;
   color: var(--navy);
-  font-size: 1rem;
+  
 }
 
 /* ---------- Product tradeoffs ---------- */
 
 .tradeoff-kicker {
   display: block;
-  font-family: var(--sans);
+  
   font-style: italic;
   color: var(--text-gray);
-  font-size: 1.1rem;
+  
   margin: 0 0 20px;
 }
 
@@ -519,18 +519,18 @@ img.proto-wireframe {
 }
 
 .tradeoff-col h4 {
-  font-family: var(--sans);
+  
   color: var(--text-gray);
   text-transform: uppercase;
-  letter-spacing: 0.06em;
-  font-size: 0.8rem;
-  font-weight: 700;
+  
+  
+  
   margin: 0 0 10px;
 }
 
 .tradeoff-col p {
   color: var(--navy);
-  font-size: 1rem;
+  
   margin: 0;
 }
 
@@ -543,13 +543,13 @@ img.proto-wireframe {
 }
 
 .learning-col h3 {
-  font-size: 1.25rem;
+  
   margin: 0 0 12px;
 }
 
 .learning-col p {
   color: var(--navy);
-  font-size: 1rem;
+  
   margin: 0;
 }
 

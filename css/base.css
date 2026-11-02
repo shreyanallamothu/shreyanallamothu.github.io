@@ -1,15 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;500&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500&display=swap');
 
 :root {
+  --serif: 'Instrument Serif', serif;
+  --sans: 'Geist', 'Inter', sans-serif;
+  --bg: #fdfcfa;
+  --popup-text: #ffffff;
+  --body-ink: #302d29;
+  --highlight: rgb(255 221 0 / 0.5);
+  /* Compatibility tokens for the restored project styles. */
   --blue: #2323e6;
-  --navy: #14146b;
-  --bg-lavender: #e9ecfb;
-  --bg-light: var(--white);
-  --text-dark: #171717;
+  --navy: var(--body-ink);
+  --bg-lavender: #f0f1fa;
+  --bg-light: var(--bg);
+  --text-dark: var(--body-ink);
   --text-gray: #8a8a8a;
-  --white: #fdfcfb;
-  --serif: 'Averia Serif Libre', Georgia, serif;
-  --sans: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --white: var(--bg);
+  --ink: #2020e0;
+  --ink-soft: rgb(32 32 224 / 0.6);
+  --tint: rgb(32 32 224 / 0.06);
+  --clear: rgb(32 32 224 / 0);
+  --size-hero: clamp(2rem, 1.5rem + 1.5vw, 3rem);
+  --size-title: clamp(2.25rem, 1.5rem + 2.5vw, 3.5rem);
+  --size-section: clamp(1.875rem, 1.5rem + 1vw, 2.5rem);
+  --size-subheading: clamp(1.25rem, 1rem + 0.6vw, 1.5rem);
+  --size-wordmark: clamp(1.5rem, 1.25rem + 0.5vw, 1.75rem);
+  --size-body: 1.125rem;
+  --size-nav: 1rem;
+  --size-caption: 0.875rem;
+  --size-label: 0.75rem;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --leading-body: 1.6;
+  --leading-hero: 1.1;
+  --leading-heading: 1.15;
+  --tracking-label: 0.08em;
 }
 
 * {
@@ -26,10 +50,8 @@ html, body {
 }
 
 body {
-  font-family: var(--sans);
-  color: var(--text-dark);
-  background: var(--bg-light);
-  line-height: 1.5;
+  color: var(--ink);
+  background: var(--bg);
 }
 
 a {
@@ -55,44 +77,35 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 24px 48px;
-  background: var(--white);
+  background: var(--bg);
   position: sticky;
   top: 0;
   z-index: 100;
 }
 
 .site-header .logo {
-  font-family: var(--serif);
-  font-size: 1.5rem;
-  color: var(--blue);
+  
+  color: var(--ink);
 }
 
 .site-nav {
   display: flex;
   gap: 40px;
-  font-size: 1.05rem;
 }
 
 .site-nav a {
-  color: var(--blue);
+  color: var(--ink);
   transition: transform 0.1s ease;
 }
 
 .site-nav a:hover {
-  font-weight: 800;
-  transition: font-weight 0.2s
-}
-
-.site-nav a.active {
-  font-weight: 700;
-}
+  transition: color 0.2s;}
 
 .nav-toggle {
   display: none;
   background: none;
   border: none;
-  font-size: 1.5rem;
-  color: var(--blue);
+  color: var(--ink);
   cursor: pointer;
 }
 
@@ -100,10 +113,8 @@ img {
 
 .pill-button {
   display: inline-block;
-  background: var(--bg-lavender);
-  font-family: "Helvetica Neue";
-  color: var(--blue);
-  font-weight: 600;
+  background: var(--tint);
+  color: var(--ink);
   padding: 18px 23px;
   border-radius: 5px 28px 5px 5px;
   transition: transform 0.15s ease;
@@ -133,9 +144,8 @@ img {
 
 .chip {
   display: inline-block;
-  background: var(--bg-light);
-  color: var(--navy);
-  font-weight: 600;
+  background: var(--bg);
+  color: var(--ink);
   padding: 10px 18px;
   border-radius: 20px 20px 20px 4px;
   transition: transform 0.15s ease;
@@ -158,13 +168,11 @@ img {
 /* ---------- Typography ---------- */
 
 h1, h2, h3 {
-  font-family: var(--serif);
-  color: var(--blue);
-  font-weight: 400;
+  color: var(--ink);
 }
 
 h1 {
-  font-size: 2.75rem;
+  
   margin: 0 0 24px;
 }
 
@@ -173,9 +181,8 @@ h1 {
 .site-footer {
   text-align: center;
   padding: 64px 48px;
-  color: var(--blue);
-  font-size: 1rem;
-  background: var(--white);
+  color: var(--ink);
+  background: var(--bg);
 }
 
 .footer-socials {
@@ -202,7 +209,6 @@ h1 {
   border: none;
   padding: 0;
   margin: 0;
-  line-height: 0;
   cursor: none;
 }
 
@@ -213,10 +219,9 @@ h1 {
   top: 0;
   left: 0;
   transform: translate(16px, -50%);
-  background: var(--blue);
-  color: var(--white);
-  font-family: var(--serif);
-  font-size: 0.95rem;
+  background: var(--ink);
+  color: var(--ink);
+  
   padding: 6px 10px;
   border-radius: 20px 20px 20px 4px;
   white-space: nowrap;
@@ -256,12 +261,12 @@ h1 {
     top: 100%;
     left: 0;
     right: 0;
-    background: var(--white);
+    background: var(--bg);
     flex-direction: column;
     padding: 16px 24px;
     gap: 16px;
     display: none;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 16px var(--tint);
     z-index: 10;
   }
 
@@ -283,10 +288,6 @@ h1 {
     padding: 16px;
   }
 
-  h1 {
-    font-size: 2.1rem;
-  }
-
   .site-footer {
     padding: 48px 20px;
   }
@@ -294,4 +295,142 @@ h1 {
   .pill-row {
     margin-top: 40px;
   }
+}
+
+/* Shared typography: display serif, functional sans. */
+body {
+  font-family: var(--sans);
+  font-size: var(--size-body);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-body);
+}
+button, input, select, textarea, code, pre { font: inherit; color: var(--ink); }
+strong, b, th { font-weight: var(--weight-medium); }
+h1, .hero-copy, .site-header .logo, .case-block h2 {
+  font-family: var(--serif);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-heading);
+}
+h1 { font-size: var(--size-title); }
+.hero-copy { font-size: var(--size-hero); line-height: var(--leading-hero); }
+.site-header .logo {
+  font-family: var(--sans);
+  font-size: var(--size-nav);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-body);
+  color: var(--ink);
+}
+.case-block h2 { font-size: var(--size-section); }
+h2, h3, h4 {
+  font-family: var(--sans);
+  font-weight: var(--weight-medium);
+  font-size: var(--size-subheading);
+  line-height: var(--leading-heading);
+}
+h1 em, h1 strong, h1 b,
+.hero-copy em, .hero-copy strong, .hero-copy b,
+.case-block h2 em, .case-block h2 strong, .case-block h2 b {
+  font-style: italic;
+  font-weight: var(--weight-regular);
+}
+.site-nav, .case-toc, .case-links {
+  font-family: var(--sans);
+  font-size: var(--size-nav);
+  font-weight: var(--weight-medium);
+}
+.site-nav a, .case-toc a, .case-links a { color: var(--ink-soft); }
+.site-nav a:hover, .site-nav a.active,
+.case-toc a:hover, .case-toc a.active,
+.case-links a:hover { color: var(--ink); }
+button, .pill-button, .chip, .tech-chip, .tech-tag,
+.case-back, .recipe-back, .essay-back, .essay-teaser-link, .notebook-cta {
+  font-family: var(--sans);
+  font-size: var(--size-nav);
+  font-weight: var(--weight-medium);
+}
+.section-label, .case-meta-label, .essay-teaser-label,
+.flow-label, .tradeoff-col h4, .project-tag {
+  font-family: var(--sans);
+  font-size: var(--size-label);
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+.media-caption, figcaption, .case-meta, .case-meta-value,
+.essay-meta, .recipe-source, .essay-source, .drag-hint,
+.roles-list, .timeline-date, .stat-label, .blog-empty, .site-footer {
+  font-family: var(--sans);
+  font-size: var(--size-caption);
+  font-weight: var(--weight-regular);
+  color: var(--ink-soft);
+}
+.site-footer { color: var(--ink); }
+.persona-quote, .subheading, .blog-quote, .content-footnote {
+  font-family: var(--sans);
+  font-size: var(--size-body);
+  font-weight: var(--weight-regular);
+}
+.stat .stat-number, .bluebox-stat {
+  font-family: var(--sans);
+  font-weight: var(--weight-medium);
+  font-size: var(--size-section);
+  line-height: var(--leading-heading);
+}
+.pill-button, .chip, .tech-chip, .tech-tag, .notebook-cta,
+.contact-form button, .definition-popup {
+  background: var(--tint);
+  color: var(--ink);
+}
+.cursor-caption {
+  background: var(--ink);
+  color: var(--popup-text);
+}
+.definition-popup::after { border-top-color: var(--ink); }
+input::placeholder, textarea::placeholder { color: var(--ink-soft); opacity: 1; }
+:focus-visible { outline-color: var(--ink); }
+.bluebox-art svg path { fill: var(--ink); }
+.bluebox-art svg path:nth-child(2) { fill: none; stroke: var(--bg); }
+.bluebox-art svg path:nth-child(3) { fill: var(--bg); }
+
+.case-links a { color: var(--ink-soft); }
+.case-links a:hover { color: var(--ink); }
+.definition-popup, .cursor-caption { font-style: normal; }
+.tech-chip, .tech-tag { background: var(--tint); color: var(--ink); }
+.footer-copy-email { line-height: 0; }
+
+/* Warm charcoal for reading text; retain blue display and interactive text. */
+body { color: var(--body-ink); }
+body p, body li, body td, body .case-lead, body .case-intro {
+  color: var(--body-ink);
+}
+body .hero-copy p { color: var(--ink); }
+body .media-caption, body .case-meta, body .case-meta-value,
+body .essay-meta, body .recipe-source, body .essay-source,
+body .drag-hint, body .stat-label, body .essay-teaser-label {
+  color: var(--ink-soft);
+}
+/* Project typography shares the display and functional type tokens. */
+.project-page h1 {
+  font-family: var(--serif);
+  font-size: var(--size-title);
+  font-weight: var(--weight-regular);
+}
+.project-page .case-block h2 {
+  font-family: var(--serif);
+  font-size: var(--size-section);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-heading);
+}
+.project-page .story-card h4 {
+  font-family: var(--sans);
+  font-size: var(--size-subheading);
+  font-weight: var(--weight-medium);
+}
+.project-page .project-card h3 { font-family: var(--sans); }
+
+/* Titles share the same columns as the case-study body. */
+.case-heading { grid-column: 2; min-width: 0; }
+@media (max-width: 860px) {
+  .case-heading { grid-column: 1; }
 }

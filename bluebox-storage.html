@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlueBox Storage &mdash; Shreya Nallamothu</title>
+<link rel="icon" href="assets/icon.png" type="image/png">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/kircuit.css">
+<link rel="stylesheet" href="css/bluebox-storage.css">
+</head>
+<body class="project-page">
+
+<header class="site-header">
+  <a href="index.html" class="logo">Shreya Nallamothu</a>
+  <nav class="site-nav">
+    <a href="projects.html" class="active">projects</a>
+    <a href="advocacy.html">i passed a law!</a>
+    <a href="blog.html">blog</a>
+    <a href="about.html">about</a>
+    <a href="#footer">contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Toggle navigation">&#9776;</button>
+</header>
+
+<section class="case-hero">
+  <div class="container case-layout">
+    <div class="case-heading">
+      <p class="case-meta">CAMPUS ENTERPRISES</p>
+      <h1>Building an operations hub for a student-run storage business</h1>
+    </div>
+  </div>
+</section>
+
+<section class="case-body">
+  <div class="container case-layout">
+    <aside class="case-sidebar">
+      <a class="case-back" href="projects.html">&larr; back</a>
+      <nav class="case-toc" aria-label="Case study sections">
+        <a href="#problem">PROBLEM</a>
+        <a href="#customer-discovery">CUSTOMER DISCOVERY</a>
+        <a href="#exploring-solutions">EXPLORING SOLUTIONS</a>
+        <a href="#defining-the-mvp">DEFINING THE MVP</a>
+        <a href="#building">BUILDING</a>
+        <a href="#the-product">THE PRODUCT</a>
+        <a href="#iterating">ITERATING POST LAUNCH</a>
+      </nav>
+    </aside>
+
+    <main class="case-main">
+      <div class="case-block" id="summary">
+        <p class="case-lead">I built and launched an operations portal for <strong>BlueBox</strong>, a student-run summer storage business at Campus Enterprises. The portal brings bookings, mover assignments, and invoice information into one place, replacing a workflow scattered across forms, spreadsheets, and documents. BlueBox serves 150 clients and generates 15K+ in revenue annually.</p>
+      </div>
+
+      <div class="case-block" id="problem">
+        <span class="section-label">Problem</span>
+        <h2>BlueBox Storage was losing half its leads because it ran on a Frankensteined ecosystem of documents.</h2>
+        <p class="case-lead">BlueBox handles everything from picking up students' belongings to storing them over the summer and returning them in the fall.</p>
+        <p class="case-lead">But almost all of this was manual. Staff had to log customer information, send invoices manually, and track information across many spreadsheets and Google Docs. This was reflected in their conversion rate: </p>
+        <div class="bluebox-callout"><span class="bluebox-stat">~50%</span><p>of students who submitted an interest form ultimately became clients</p></div>
+      </div>
+
+      <div class="case-block" id="customer-discovery">
+        <span class="section-label">Customer discovery</span>
+        <h2>I talked to all three sides of the operation to understand their needs.</h2>
+        <p class="case-lead">Unlike a typical customer-facing product, BlueBox needed to serve three different groups with different needs: students, movers, and operations staff. I interviewed people from each group about what frustrated them with the current process.</p>
+        <div class="bluebox-personas">
+          <div class="persona-card"><h3>Students</h3><ul><li>Had to fill out multiple forms and repeat information they already shared</li><li>Often wondered when their stuff would arrive</li><li>Confused about invoices and payment deadlines</li></ul></div>
+          <div class="persona-card"><h3>Movers</h3><ul><li>Hard to keep track of their move assignments</li><li>Didn't want to manually log everyone's belongings in Google Docs</li></ul></div>
+          <div class="persona-card"><h3>BlueBox employees</h3><ul><li>Spent hours manually entering customer information, sending invoices, and chasing down payments</li><li>Had customer information scattered across Google Forms, spreadsheets, Invoice Ninja, and Google Docs</li><li>Had a hard time getting basic numbers about the business</li></ul></div>
+        </div>
+        <p class="case-lead">Both groups needed a better experience, but I decided to start with employees. That's where I found the most friction, since they were responsible for coordinating every part of the storage process.</p>
+        <p class="case-lead">After interviewing stakeholders and reviewing BlueBox's existing tools, I mapped out the entire workflow.</p>
+        <figure class="bluebox-figure"><img src="assets/bluebox/operations_workflow.png" alt="Map of BlueBox's existing operations workflow" loading="lazy"><figcaption class="media-caption">Operations workflow map</figcaption></figure>
+        <p class="case-lead">hree recurring pain points. Repetitive manual work, disconnected workflows, and limited visibility into business performance.</p>
+        <p class="case-lead">I decided to measure success in two ways: fewer manual steps for each booking and a higher conversion rate.</p>
+      </div>
+
+      <div class="case-block" id="exploring-solutions">
+        <span class="section-label">Exploring solutions</span>
+        <h2>I explored three ways to improve operations, each with different tradeoffs.</h2>
+        <ol class="flow-steps bluebox-options">
+          <li class="flow-step"><h3>Connect the existing tools</h3><p>This would be quick to build, but information would still live across a bunch of different platforms.</p></li>
+          <li class="flow-step"><h3>Build an internal dashboard</h3><p>This would give employees one place to see customers, movers, and business metrics, but they'd still need other tools to actually get things done.</p></li>
+          <li class="flow-step"><h3>Build an operations hub</h3><p>This would bring the entire process into one place, but would take the most time to build.</p></li>
+        </ol>
+        <p class="case-lead">I went with the operations hub. It was the biggest upfront investment, but it was also the only option that actually addressed all three problems instead of making the existing system a little easier to use.</p>
+      </div>
+
+      <div class="case-block" id="defining-the-mvp">
+        <span class="section-label">Defining the MVP</span>
+        <h2>Prioritizing impact while keeping the first version focused.</h2>
+        <p class="case-lead">I mapped potential features on an impact vs. effort matrix. Simple features like intake forms and Invoice Ninja syncing were easy wins, while the operations hub took more work but had the potential to bring the whole workflow together.</p>
+        <figure class="bluebox-figure"><img src="assets/bluebox/impact_effort_matrix.png" alt="Impact versus effort matrix comparing potential BlueBox features" loading="lazy"><figcaption class="media-caption">Impact vs. effort matrix</figcaption></figure>
+        <p class="case-lead">I also had to make a few scope decisions:</p>
+        <div class="story-grid">
+          <div class="story-card"><h4>Build payments or use what BlueBox already had?</h4><p>Building payments from scratch would take a lot of time without making the actual storage experience much better. I kept Invoice Ninja for billing and payments and used BlueBox's database for bookings and mover assignments.</p></div>
+          <div class="story-card"><h4>Automate mover assignments or keep them manual?</h4><p>Mover schedules change constantly, so trying to automate every exception would get complicated fast. Instead, I focused on allowing staff to manually assign movers.</p></div>
+        </div>
+      </div>
+
+      <div class="case-block" id="building">
+        <span class="section-label">Building</span>
+        <h2>Connecting the workflows, from rough notes to a working system.</h2>
+        <p class="case-lead">After deciding on the core features, I began mapping out these interactions, thinking through how information would move between Invoice Ninja, the operations hub, and different parts of the platform.</p>
+        <div class="bluebox-architecture">
+          <div class="bluebox-architecture-stage">
+            <figure class="bluebox-figure bluebox-notes"><img src="assets/bluebox/rough_notes.png" alt="Rough notes mapping the portal's core interactions" loading="lazy"><figcaption class="media-caption">Mapping interactions in my rough notes</figcaption></figure>
+            <figure class="bluebox-figure bluebox-system"><img src="assets/bluebox/architecture.png" alt="System architecture connecting the BlueBox portal and its services" loading="lazy"><figcaption class="media-caption">Turning those interactions into a system architecture</figcaption></figure>
+          </div>
+        </div>
+        <div class="bluebox-payment-flow">
+        <p class="case-lead">Using the Invoice Ninja API docs, I figured out what data I could pull into the portal and designed a payment flow that connected invoices to each customer's booking status.</p>
+        <figure class="bluebox-figure"><img src="assets/bluebox/payments_flowchar.png" alt="Payment flowchart connecting invoices with customer booking status" loading="lazy"><figcaption class="media-caption">Payments flowchart</figcaption></figure>
+        </div>
+        <p class="case-lead">From there, I broke the portal into its main pages and started wireframing in Figma.</p>
+        <figure class="bluebox-figure"><img src="assets/bluebox/wireframing.png" alt="Figma wireframes for the BlueBox operations portal" loading="lazy"><figcaption class="media-caption">Wireframing the portal in Figma</figcaption></figure>
+      </div>
+
+      <div class="case-block" id="the-product">
+        <span class="section-label">The product</span>
+        <h2>One place to manage the summer storage process.</h2>
+        <p class="case-lead">After building the core workflows, I launched the first version of the BlueBox operations portal, focused on the employees running BlueBox. Instead of constantly jumping between forms, spreadsheets, Google Docs, and Invoice Ninja, they could manage the storage process from one place.</p>
+        <div class="solution-list bluebox-feature-grid">
+          <div class="solution-item">
+            <img src="assets/bluebox/invoices.png" alt="BlueBox invoices page with payment statuses, balances, and invoice sending controls" loading="lazy">
+            <p>Send invoices and track payment statuses in one place.</p>
+          </div>
+          <div class="solution-item">
+            <img src="assets/bluebox/client_page.png" alt="BlueBox client page showing customer information, payments, storage items, and move records" loading="lazy">
+            <p>Keep customer details, payments, and move records together.</p>
+          </div>
+          <div class="solution-item">
+            <img src="assets/bluebox/operations_hub.png" alt="BlueBox operations hub with items and pricing, movers, and forms tabs" loading="lazy">
+            <p>Manage storage pricing, movers, and forms from one hub.</p>
+          </div>
+          <div class="solution-item">
+            <img src="assets/bluebox/analytics.png" alt="BlueBox analytics dashboard showing revenue, outstanding payments, conversion, and storage performance" loading="lazy">
+            <p>See revenue, outstanding payments, and conversion at a glance.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-block" id="iterating">
+        <span class="section-label">Iterating post launch</span>
+        <h2>Giving students more control over their own bookings.</h2>
+        <p class="case-lead">After launch, I checked in with BlueBox employees to see what was working and what was still taking up their time. I found that the remaining portion of their manual work came from customers asking to change pickup details or update their information.</p>
+        <p class="case-lead">Even though employees could now manage these requests more efficiently, they still had to make every change themselves.</p>
+        <p class="case-lead">I decided to extend the portal to customers, building a self-service experience where students could view their bookings, change pickup details, and update their information without contacting BlueBox.</p>
+      </div>
+    </main>
+  </div>
+</section>
+
+<div class="cursor-caption" id="cursorCaption"></div>
+
+<footer class="site-footer" id="footer">
+  <div class="footer-socials">
+    <a href="https://github.com/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/github-sign.png" alt="GitHub"></a>
+    <a href="https://instagram.com/shreyaonline_" target="_blank" rel="noopener"><img src="assets/footer/instagram.png" alt="Instagram"></a>
+    <a href="https://linkedin.com/in/shreyanallamothu" target="_blank" rel="noopener"><img src="assets/footer/linkedin.png" alt="LinkedIn"></a>
+    <button type="button" class="footer-copy-email" data-email="shreyanallamothu29@gmail.com" data-caption="copy email"><img src="assets/footer/mail.png" alt="Email"></button>
+  </div>
+  this website was coded with &lt;3 by shreya nallamothu
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/bluebox-storage.js"></script></body>
+</html>

@@ -1,0 +1,83 @@
+/* Extend the shared case-study layout without changing other projects. */
+.case-block h2 { max-width: 100%; }
+#summary { padding-bottom: 32px; }
+#summary .case-lead { margin-bottom: 0; }
+.bluebox-demo-placeholder { width: 100%; aspect-ratio: 16 / 9; border-radius: 6px; }
+.bluebox-callout {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 32px;
+  background: var(--bg-lavender);
+  border-radius: 16px 16px 16px 4px;
+  color: var(--navy);
+}
+.bluebox-stat {   color: var(--blue); }
+.bluebox-callout p { margin: 0; font-size: var(--size-caption); }
+.bluebox-personas { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin-bottom: 36px; }
+.bluebox-personas .persona-card { width: auto; padding: 24px 20px; }
+.bluebox-personas .persona-card ul { font-size: var(--size-caption); }
+.bluebox-personas .persona-card h3 { font-size: var(--size-nav); }
+.bluebox-personas li { margin-bottom: 12px; }
+.bluebox-figure { margin: 0 0 36px; }
+.bluebox-impact-matrix { width: 80%; margin-inline: auto; }
+.bluebox-figure img { display: block; width: 100%; height: auto; border-radius: 8px; margin-bottom: 12px; }
+.bluebox-pain-points { color: var(--navy); padding-left: 24px; margin-bottom: 28px; }
+.bluebox-pain-points li { margin-bottom: 8px; }
+.bluebox-options { margin-left: 8px; margin-bottom: 32px; }
+.bluebox-options h3 { margin: 0 0 10px; }
+.bluebox-options h3,
+.bluebox-options p {
+  font-size: var(--size-body);
+  line-height: var(--leading-body);
+}
+.bluebox-pending { min-height: 240px; padding: 24px; }
+.bluebox-payment-flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 200px);
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.bluebox-payment-flow .case-lead,
+.bluebox-payment-flow .bluebox-figure { margin-bottom: 0; }
+.bluebox-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+  margin-top: 32px;
+}
+.bluebox-feature-grid .solution-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 16px;
+  min-width: 0;
+}
+.bluebox-feature-grid .solution-item p {
+  font-size: var(--size-caption);
+  text-align: center;
+}
+.bluebox-pending-screens { min-height: 150px; margin-top: 24px; }
+/* Both diagrams remain visible when JavaScript or motion is disabled. */
+.case-main { overflow: visible; }
+.bluebox-architecture.is-animated { height: 220svh; margin-bottom: 36px; }
+.is-animated .bluebox-architecture-stage {
+  position: sticky;
+  top: var(--diagram-top, 110px);
+  height: calc(100svh - var(--diagram-top, 110px) - 16px);
+  display: grid;
+  align-items: center;
+}
+.is-animated .bluebox-figure { grid-area: 1 / 1; margin: 0; }
+.is-animated .bluebox-notes { opacity: calc(1 - var(--diagram-progress, 0)); }
+.is-animated .bluebox-system { opacity: var(--diagram-progress, 0); }
+.is-animated .bluebox-figure img { height: max(100px, calc(100svh - var(--diagram-top, 110px) - 100px)); object-fit: contain; background: var(--white); }
+@media (max-width: 1100px) { .bluebox-personas { grid-template-columns: 1fr; } }
+@media (max-width: 600px) {
+  .bluebox-feature-grid { grid-template-columns: 1fr; }
+  .bluebox-payment-flow { grid-template-columns: 1fr; gap: 20px; }
+  .bluebox-payment-flow .bluebox-figure { width: 100%; max-width: 200px; justify-self: center; }
+  .bluebox-callout { flex-direction: column; align-items: flex-start; gap: 8px; padding: 24px; }
+  .bluebox-pending { min-height: 180px; }
+}

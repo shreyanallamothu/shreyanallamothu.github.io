@@ -1,7 +1,7 @@
 /* ---------- Contact ---------- */
 
 .contact-section {
-  background: var(--white);
+  background: var(--bg);
   padding: 80px 0 100px;
   text-align: center;
 }
@@ -17,12 +17,11 @@
 
 .contact-form input,
 .contact-form textarea {
-  font-family: var(--sans);
-  font-size: 1rem;
+  
   padding: 14px 16px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--tint);
   border-radius: 8px;
-  background: var(--bg-light);
+  background: var(--bg);
 }
 
 .contact-form textarea {
@@ -31,14 +30,12 @@
 }
 
 .contact-form button {
-  font-family: var(--sans);
-  font-weight: 600;
-  font-size: 1rem;
+  
   padding: 14px 20px;
   border: none;
   border-radius: 28px 28px 28px 4px;
-  background: var(--blue);
-  color: var(--white);
+  background: var(--tint);
+  color: var(--ink);
   cursor: pointer;
   transition: opacity 0.15s ease;
 }

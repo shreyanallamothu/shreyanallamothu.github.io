@@ -1,7 +1,7 @@
 /* ---------- Blog hero ---------- */
 
 .blog-hero {
-  background: var(--white);
+  background: var(--bg);
   padding: 60px 0 50px;
 }
 
@@ -17,19 +17,14 @@
   max-width: 1500px;
 }
 
-.blog-hero-text h1 {
-  line-height: 1.2;
-  font-size: 3.5rem;
-}
-
 .blog-hero-text .chip {
-  background: var(--bg-lavender);
+  background: var(--tint);
   border-radius: 5px 28px 5px 5px;
   margin-bottom: 20px;
 }
 
 .blog-hero-text p {
-  color: var(--navy);
+  color: var(--ink);
 }
 
 .blog-reels {
@@ -58,9 +53,8 @@
 
 .blog-quote {
   flex: 1 1 320px;
-  color: var(--blue);
-  font-family: var(--serif);
-  font-size: 3rem;
+  color: var(--ink);
+  
   margin: 0;
 }
 
@@ -82,13 +76,6 @@
 }
 
 @media (max-width: 480px) {
-  .blog-hero-text h1 {
-    font-size: 2.3rem;
-  }
-
-  .blog-quote {
-    font-size: 2rem;
-  }
 }
 
 .essay-teaser {
@@ -97,16 +84,14 @@
 
 .essay-teaser-label {
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.8rem;
-  color: var(--text-gray);
-  font-weight: 600;
+  
+  color: var(--ink-soft);
   margin: 0 0 12px;
 }
 
 .essay-teaser-card {
   display: block;
-  background: var(--white);
+  background: var(--tint);
   border-radius: 8px 40px 8px 8px;
   padding: 28px 32px;
   max-width: 640px;
@@ -118,23 +103,19 @@
 }
 
 .essay-teaser-card h3 {
-  font-family: var(--serif);
-  color: var(--blue);
-  font-weight: 400;
-  font-size: 1.4rem;
+  color: var(--ink);
+  
   margin: 0 0 10px;
 }
 
 .essay-teaser-card p {
-  color: var(--navy);
-  font-size: 0.98rem;
+  color: var(--ink);
   margin: 0 0 14px;
 }
 
 .essay-teaser-link {
-  color: var(--blue);
-  font-weight: 600;
-  font-size: 0.95rem;
+  color: var(--ink);
+  
 }
 
 .arrow-ne {
@@ -150,12 +131,11 @@
 /* ---------- Blog ---------- */
 
 .blog-section {
-  background: var(--white);
+  background: var(--bg);
   padding: 60px 0 90px;
   min-height: 50vh;
 }
 
 .blog-empty {
-  color: var(--text-gray);
-  font-size: 1.1rem;
+  color: var(--ink-soft);
 }

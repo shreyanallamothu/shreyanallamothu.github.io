@@ -5,20 +5,18 @@
 }
 
 .essay-hero {
-  background: var(--bg-lavender);
+  background: var(--tint);
   padding: 60px 0 40px;
 }
 
 .essay-back {
   display: inline-block;
-  color: var(--blue);
-  font-weight: 600;
+  color: var(--ink);
   margin-bottom: 24px;
 }
 
 .essay-meta {
-  color: var(--text-gray);
-  font-size: 0.9rem;
+  color: var(--ink-soft);
   margin: 0 0 8px;
 }
 
@@ -27,25 +25,22 @@
 }
 
 .essay-body {
-  background: var(--white);
+  background: var(--bg);
   padding: 60px 0 100px;
 }
 
 .essay-body p {
-  color: var(--navy);
-  font-size: 1.05rem;
+  color: var(--ink);
   margin: 0 0 20px;
 }
 
 .essay-source {
   margin-top: 40px;
   padding-top: 24px;
-  border-top: 1px solid var(--bg-light);
-  font-size: 0.9rem;
-  color: var(--text-gray);
+  border-top: 1px solid var(--bg);
+  color: var(--ink-soft);
 }
 
 .essay-source a {
-  color: var(--blue);
-  font-weight: 600;
+  color: var(--ink);
 }

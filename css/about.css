@@ -1,33 +1,29 @@
 /* ---------- About (full page) ---------- */
 
 .about-full {
-  background: var(--white);
+  background: var(--bg);
   padding: 80px 0;
 }
 
 .about-full p {
-  font-size: 1.05rem;
   margin: 0 0 20px;
 }
 
 .about-full .drag-hint {
   text-align: center;
   font-style: italic;
-  color: var(--text-gray);
-  font-size: 0.9rem;
+  color: var(--ink-soft);
   margin: 0 0 8px;
 }
 
 .subheading {
-  font-family: var(--sans);
   font-style: italic;
-  color: var(--blue);
-  font-size: 1.3rem;
+  color: var(--ink);
   margin: -8px 0 28px;
 }
 
 .about-full ul {
-  color: var(--text-dark);
+  color: var(--ink);
   padding-left: 20px;
   margin-bottom: 24px;
 }
@@ -37,8 +33,7 @@
 }
 
 .recipe-link {
-  color: var(--blue);
-  font-weight: 600;
+  color: var(--ink);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -71,9 +66,9 @@
   margin: 0;
   border-radius: 8px 8px 8px 8px;
   overflow: hidden;
-  background: #d9d9d9;
+  background: var(--tint);
   cursor: none;
-  box-shadow: 0 14px 30px rgba(20, 20, 107, 0.18);
+  box-shadow: 0 14px 30px var(--tint);
   z-index: 1;
   transition: transform 0.25s ease;
 }
@@ -181,9 +176,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(20, 20, 107, 0.7);
-    color: var(--white);
-    font-size: 0.8rem;
+    background: var(--tint);
+    color: var(--ink);
     padding: 8px 12px;
   }
 }
