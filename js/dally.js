@@ -16,12 +16,12 @@ function updateObjectScene() {
   const overlap = clampProgress(progress * 2);
   const reveal = clampProgress(progress * 2 - 1);
   const firstLeft = dallyObjects[0].offsetLeft;
-  const shifts = dallyObjects.map((item) => (firstLeft - item.offsetLeft) * overlap * 0.37);
+  const shifts = dallyObjects.map((item) => (firstLeft - item.offsetLeft) * overlap * 0.3);
 
   dallyObjects.forEach((item, index) => {
     item.style.setProperty('--object-shift', `${shifts[index]}px`);
   });
-  objectScene.style.setProperty('--overlap', overlap);
+  objectScene.style.setProperty('--headline-shift', `${shifts.at(-1)}px`);
   objectScene.style.setProperty('--reveal-opacity', reveal);
   objectScene.style.setProperty('--card-shift', `${(1 - reveal) * 48}px`);
 }

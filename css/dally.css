@@ -98,13 +98,16 @@
 }
 
 .dally-object-group img:nth-child(3) {
-  --object-angle: -13deg;
+  --object-angle: -8deg;
+  width: 88%;
+  justify-self: center;
 }
 
 .dally-object-headline {
+  max-width: 92%;
   font-size: clamp(1.45rem, 3vw, 3rem);
   line-height: 1.15;
-  transform: translateX(calc(-92% * var(--overlap, 0)));
+  transform: translateX(var(--headline-shift, 0px));
 }
 
 .dally-reveal {
