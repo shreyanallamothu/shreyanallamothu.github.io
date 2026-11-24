@@ -1,0 +1,230 @@
+.dally-page {
+  background: #fdfdfd;
+}
+
+.dally {
+  --placeholder: #d8d8d8;
+  padding: 48px clamp(20px, 4vw, 64px) 80px;
+  color: #111;
+  font: 1rem / 1.4 var(--sans);
+}
+
+.dally h1,
+.dally h2 {
+  color: inherit;
+  font-weight: 400;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.dally h1 {
+  font-size: clamp(2.5rem, 5vw, 5rem);
+}
+
+.dally h2 {
+  font-size: 2rem;
+}
+
+.dally p {
+  margin: 0;
+}
+
+.dally-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(24px, 4vw, 64px);
+  align-items: center;
+}
+
+.dally-split p {
+  max-width: 30ch;
+}
+
+.dally-hero p {
+  margin: 10px 0 24px;
+}
+
+.dally-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 378 / 243;
+  padding: 12px;
+  background: var(--placeholder);
+  text-align: center;
+}
+
+.dally-pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 13px 28px;
+  background: var(--placeholder);
+}
+
+.dally-pill:hover {
+  background: #c9c9c9;
+}
+
+.dally-objects {
+  display: grid;
+  grid-template-columns: minmax(0, 64fr) minmax(0, 25fr) minmax(0, 11fr);
+  gap: clamp(8px, 2vw, 32px);
+  align-items: center;
+  position: relative;
+  margin: 60px 0 72px;
+  padding-block: 16px;
+  overflow: clip;
+}
+
+.dally-object-group {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: clamp(4px, 1.5vw, 20px);
+  position: relative;
+}
+
+.dally-object-group img,
+.dally-rothko-card {
+  width: 100%;
+  height: clamp(78px, 15vw, 195px);
+  object-fit: contain;
+}
+
+.dally-object-group img {
+  transform: translateX(var(--object-shift, 0px)) rotate(var(--object-angle, 0deg));
+}
+
+.dally-object-group img:nth-child(2) {
+  --object-angle: -7deg;
+}
+
+.dally-object-group img:nth-child(3) {
+  --object-angle: -13deg;
+}
+
+.dally-object-headline {
+  font-size: clamp(1.45rem, 3vw, 3rem);
+  line-height: 1.15;
+  transform: translateX(calc(-92% * var(--overlap, 0)));
+}
+
+.dally-reveal {
+  display: grid;
+  grid-column: 2 / -1;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+  gap: clamp(8px, 1.5vw, 24px);
+  align-items: center;
+  font-size: clamp(0.875rem, 1.6vw, 1.5rem);
+  line-height: 1.2;
+  opacity: var(--reveal-opacity, 1);
+}
+
+.dally-scroll-scene .dally-reveal {
+  position: absolute;
+  grid-column: auto;
+  top: 50%;
+  right: 1%;
+  width: 27%;
+  transform: translateY(-50%);
+}
+
+.dally-rothko-card {
+  transform: translateX(var(--card-shift, 0px)) rotate(9deg);
+}
+
+.dally .dally-materials {
+  max-width: 24ch;
+  font-size: clamp(1.6rem, 3vw, 3.5rem);
+  line-height: 1.28;
+}
+
+.dally-materials img {
+  display: inline-block;
+  width: auto;
+  height: 1.1em;
+  vertical-align: middle;
+}
+
+.dally-materials .dally-nfc-tags {
+  width: 2em;
+  object-fit: cover;
+}
+
+.dally-prints {
+  margin-top: 32px;
+  scroll-margin-top: 100px;
+}
+
+.dally-prints h2 {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.dally-setup {
+  display: grid;
+  grid-template-columns: 1.85fr repeat(5, 1fr);
+  gap: 16px;
+  align-items: center;
+  margin-top: 70px;
+}
+
+.dally-setup-intro {
+  aspect-ratio: 1.08;
+}
+
+.dally-phone {
+  position: relative;
+  aspect-ratio: 1 / 2;
+  border: 4px solid #151515;
+  border-radius: 16px;
+  box-shadow: 0 0 0 1px #888;
+}
+
+.dally-phone::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 20%;
+  width: 60%;
+  height: 6px;
+  border-radius: 0 0 7px 7px;
+  background: #151515;
+}
+
+@media (max-width: 620px) {
+  .dally {
+    padding-top: 32px;
+  }
+
+  .dally-split {
+    grid-template-columns: 1fr;
+  }
+
+  .dally-hero > div:last-child {
+    grid-row: 1;
+  }
+
+  .dally-objects {
+    margin-block: 44px 48px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .dally-object-group {
+    grid-column: 1 / -1;
+  }
+
+  .dally-object-headline {
+    transform: none;
+  }
+
+  .dally-scroll-scene .dally-reveal {
+    position: static;
+    grid-column: 2;
+    width: auto;
+    transform: none;
+  }
+
+  .dally-setup {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 48px;
+  }
+}

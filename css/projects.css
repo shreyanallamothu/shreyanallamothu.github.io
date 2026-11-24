@@ -207,3 +207,14 @@
   .project-card:hover .bluebox-art svg,
   .project-card:focus-visible .bluebox-art svg { transform: none; }
 }
+
+.project-card .dally-art {
+  display: grid;
+  place-items: center;
+  background: #fdfdfd;
+}
+
+.project-card .dally-art img {
+  width: 42%;
+  height: auto;
+}

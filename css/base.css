@@ -64,6 +64,10 @@ img {
   display: block;
 }
 
+.dally-brick-cutout {
+  mask: url("../assets/dally/orange-brick.png") center / contain no-repeat;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
