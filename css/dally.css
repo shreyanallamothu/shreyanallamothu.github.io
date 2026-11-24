@@ -162,6 +162,12 @@
   text-align: center;
 }
 
+.dally-cad-video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .dally-setup {
   display: grid;
   grid-template-columns: 1.85fr repeat(5, 1fr);
