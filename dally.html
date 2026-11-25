@@ -7,7 +7,7 @@
 <meta name="description" content="Dally is a DIY alternative to Brick, made out of your favorite everyday objects.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/dally.css?v=41">
+<link rel="stylesheet" href="css/dally.css?v=42">
 </head>
 <body class="dally-page">
 
@@ -44,15 +44,15 @@
     <span class="dally-star" aria-hidden="true" style="--star-x: 37%; --star-y: 14%; --star-size: 43px; --star-angle: 16deg"></span>
     <span class="dally-star" aria-hidden="true" style="--star-x: 92%; --star-y: 84%; --star-size: 52px; --star-angle: -18deg"></span>
     <div class="dally-object-group">
-      <img src="assets/dally/HEIF%20Image%204.jpg" width="248" height="271" alt="Blue and white checkered photo frame">
-      <img src="assets/dally/HEIF%20Image%203.jpg" width="1780" height="2785" alt="Instant photo of two people holding a cake">
-      <img src="assets/dally/orange-brick-transparent.png" width="1440" height="1078" alt="Orange pause button">
+      <img src="assets/dally/checkered-photo-frame.jpg" width="248" height="271" alt="Blue and white checkered photo frame">
+      <img src="assets/dally/instant-photo-with-cake.jpg" width="1780" height="2785" alt="Instant photo of two people holding a cake">
+      <img src="assets/dally/orange-printed-pause-button.png" width="1440" height="1078" alt="Orange pause button">
       <img src="assets/dally/multnomah-falls-magnet.png" width="523" height="640" alt="Multnomah Falls souvenir magnet">
     </div>
     <p class="dally-object-headline">You can turn anything into a Dally!</p>
     <div class="dally-reveal">
       <p>no, <em>seriously</em> anything</p>
-      <img class="dally-rothko-card" src="assets/dally/IMG_3582-removebg-preview.png" width="287" height="388" alt="Ace of diamonds with Rothko artwork">
+      <img class="dally-rothko-card" src="assets/dally/rothko-playing-card.png" width="287" height="388" alt="Ace of diamonds with Rothko artwork">
     </div>
   </div>
 
@@ -63,11 +63,11 @@
       <p>
         You’ll need
         <button type="button" aria-controls="dally-material-nfc" aria-pressed="false">NFC stickers
-          <img class="dally-nfc-tags" src="assets/dally/image-removebg-preview.png" width="500" height="500" alt="">
+          <img class="dally-nfc-tags" src="assets/dally/nfc-stickers.png" width="500" height="500" alt="">
         </button>,
         the free
         <button type="button" aria-controls="dally-material-foqos" aria-pressed="false">Foqos app
-          <img src="assets/dally/foqos-logo-removebg-preview.png" width="500" height="500" alt="">
+          <img src="assets/dally/foqos-hourglass.png" width="500" height="500" alt="">
         </button>,
         and something to stick a tag on.
       </p>
@@ -77,17 +77,17 @@
     </div>
     <div class="dally-material-previews">
       <article id="dally-material-nfc" hidden>
-        <img src="assets/dally/image-removebg-preview.png" width="500" height="500" alt="NFC tags">
+        <img src="assets/dally/nfc-stickers.png" width="500" height="500" alt="NFC tags">
         <p class="dally-material-description">You can get 50 of these NFC stickers for just $8, so make some for your friends! NFC tags are the same technology used in hotel keycards. If you don't want to buy an NFC, you can use the barcode off of any box instead.</p>
         <a class="pill-button dally-rounded-button" href="https://www.amazon.com/dp/B0F24L4GDM?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1">Buy on Amazon</a>
       </article>
       <article id="dally-material-magnets" hidden>
-        <img src="assets/dally/magnets%20big%20preview.png" width="532" height="469" alt="Magnets for Dally">
+        <img src="assets/dally/craft-magnets.png" width="532" height="469" alt="Magnets for Dally">
         <p class="dally-material-description">These magnets are optional, but they’re great if you want to stick your blocker to a fridge or a metal filing cabinet.</p>
         <a class="pill-button dally-rounded-button" href="https://www.amazon.com/s?k=small+craft+magnets">Buy on Amazon</a>
       </article>
       <article id="dally-material-foqos" hidden>
-        <img src="assets/dally/foqos-logo-removebg-preview.png" width="500" height="500" alt="Foqos purple hourglass logo">
+        <img src="assets/dally/foqos-hourglass.png" width="500" height="500" alt="Foqos purple hourglass logo">
         <p class="dally-material-description">This is the app we’ll use to actually implement the blocking. The creator has said he’ll keep the app totally free, and all of the code is open source!</p>
         <a class="pill-button dally-rounded-button" href="https://apps.apple.com/us/app/foqos-tap-to-block/id6736793117">Get Foqos on the App Store</a>
       </article>
@@ -104,9 +104,9 @@
         <div class="dally-demo-square"></div>
       </li>
       <li>
-        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/4.GIF" aria-pressed="false">
+        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/foqos-nfc-setup.gif" aria-pressed="false">
           <span class="dally-phone">
-            <img src="assets/dally/step-4-still.png" width="882" height="1920" loading="lazy" alt="Set up an NFC tag as a physical unlock in Foqos">
+            <img src="assets/dally/foqos-nfc-setup-still.png" width="882" height="1920" loading="lazy" alt="Set up an NFC tag as a physical unlock in Foqos">
           </span>
         </button>
         <p class="dally-step-caption">
@@ -117,7 +117,7 @@
       <li>
         <div class="dally-step-visual">
           <div class="dally-phone">
-            <img src="assets/dally/1.PNG" width="1206" height="2622" loading="lazy" alt="The Dally shortcut in the iPhone Shortcuts app">
+            <img src="assets/dally/shortcuts-library.png" width="1206" height="2622" loading="lazy" alt="The Dally shortcut in the iPhone Shortcuts app">
           </div>
         </div>
         <p class="dally-step-caption">
@@ -126,9 +126,9 @@
         </p>
       </li>
       <li>
-        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/steps-2-3.gif" aria-pressed="false">
+        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/shortcuts-nfc-automation.gif" aria-pressed="false">
           <span class="dally-phone">
-            <img src="assets/dally/step-2-still.png" width="882" height="1920" loading="lazy" alt="Find the NFC automation and configure the NFC tag scan in Shortcuts">
+            <img src="assets/dally/shortcuts-nfc-automation-still.png" width="882" height="1920" loading="lazy" alt="Find the NFC automation and configure the NFC tag scan in Shortcuts">
           </span>
         </button>
         <p class="dally-step-caption">
@@ -137,9 +137,9 @@
         </p>
       </li>
       <li>
-        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/5.GIF" aria-pressed="false">
+        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/shortcuts-add-foqos-action.gif" aria-pressed="false">
           <span class="dally-phone">
-            <img src="assets/dally/step-5-still.png" width="882" height="1920" loading="lazy" alt="Search for an action in Shortcuts">
+            <img src="assets/dally/shortcuts-add-foqos-action-still.png" width="882" height="1920" loading="lazy" alt="Search for an action in Shortcuts">
           </span>
         </button>
         <p class="dally-step-caption">
@@ -158,7 +158,7 @@
     <span class="dally-star" aria-hidden="true" style="--star-x: 42%; --star-y: 103%; --star-size: 47px; --star-angle: 19deg"></span>
     <h2 id="prints-title">Have access to a 3D printer? Use my STL files!</h2>
     <div class="dally-split">
-      <img class="dally-cad-video" src="assets/dally/3d%20print%20demo.GIF" width="640" height="424" alt="3D printing demo for the Dally pause button">
+      <img class="dally-cad-video" src="assets/dally/3d-print-demo.gif" width="640" height="424" alt="3D printing demo for the Dally pause button">
       <div class="dally-prints-details">
         <p>I designed this pause button in Tinkercad to fit a 25 × 25 mm NFC sticker and 5 × 2.8 mm magnets. In your slicer, add a pause around layer 43, just before the print starts covering the slot. Drop the NFC sticker into the slot, then resume printing to seal it inside. Once the print is done, glue the magnets into the holes on the underside.</p>
         <p>If your NFC sticker is a different size, feel free to resize the slot in Tinkercad!</p>

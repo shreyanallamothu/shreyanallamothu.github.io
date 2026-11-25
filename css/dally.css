@@ -53,7 +53,7 @@
 }
 
 .dally-star {
-  --star-image: url("../assets/dally/goldstar.png");
+  --star-image: url("../assets/dally/gold-star-sticker.png");
   position: absolute;
   top: var(--star-y);
   left: var(--star-x);
@@ -425,7 +425,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../assets/dally/iphone%20frame.png") center / 100% 100% no-repeat;
+  background: url("../assets/dally/iphone-frame.png") center / 100% 100% no-repeat;
   pointer-events: none;
 }
 
