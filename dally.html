@@ -4,10 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dally &mdash; Shreya Nallamothu</title>
-<meta name="description" content="Dally turns everyday objects into pause buttons.">
+<meta name="description" content="Dally is a DIY alternative to Brick, made out of your favorite everyday objects.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/dally.css?v=3">
+<link rel="stylesheet" href="css/dally.css?v=40">
 </head>
 <body class="dally-page">
 
@@ -25,15 +25,24 @@
 
 <main class="dally">
   <section class="dally-split dally-hero" aria-labelledby="dally-title">
-    <div class="dally-placeholder">Demo coming soon</div>
-    <div>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 4%; --star-y: 0%; --star-size: 78px; --star-angle: -18deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 47%; --star-y: 88%; --star-size: 60px; --star-angle: 20deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 68%; --star-y: 9%; --star-size: 68px; --star-angle: 12deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 94%; --star-y: 32%; --star-size: 54px; --star-angle: -24deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 85%; --star-y: 82%; --star-size: 86px; --star-angle: 22deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 29%; --star-y: 99%; --star-size: 47px; --star-angle: 28deg"></span>
+    <div class="dally-hero-demo">Demo coming soon</div>
+    <div class="dally-hero-copy">
       <h1 id="dally-title">Dally</h1>
-      <p>Turn an everyday object into a physical pause button for your phone.</p>
-      <a class="dally-pill" href="#prints">See the 3D prints</a>
+      <p>a DIY alternative to Brick, made out of your favorite everyday objects.</p>
+      <p>tap your phone. block your apps. go do something else.</p>
+      <a class="pill-button" href="#materials">Make your own ↓</a>
     </div>
   </section>
 
   <div class="dally-objects">
+    <span class="dally-star" aria-hidden="true" style="--star-x: 37%; --star-y: 14%; --star-size: 43px; --star-angle: 16deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 92%; --star-y: 84%; --star-size: 52px; --star-angle: -18deg"></span>
     <div class="dally-object-group">
       <img src="assets/dally/HEIF%20Image%204.jpg" width="248" height="271" alt="Blue and white checkered photo frame">
       <img src="assets/dally/HEIF%20Image%203.jpg" width="1780" height="2785" alt="Instant photo of two people holding a cake">
@@ -47,29 +56,121 @@
     </div>
   </div>
 
-  <p class="dally-materials">
-    To make a Dally, you’ll need $8 NFC tags
-    <img class="dally-nfc-tags" src="assets/dally/image-removebg-preview.png" width="500" height="500" alt="">,
-    magnets <img src="assets/dally/image-removebg-preview%20%282%29.png" width="246" height="226" alt="">,
-    and the Foqos app <img src="assets/dally/foqos-logo-removebg-preview.png" width="500" height="500" alt="">.
-  </p>
-
-  <section class="dally-prints" id="prints" aria-labelledby="prints-title">
-    <h2 id="prints-title">3D Prints</h2>
-    <div class="dally-split">
-      <img class="dally-cad-video" src="assets/dally/cad-demo-motion.gif" width="720" height="476" alt="CAD preview of the 3D-printed Dally pause button">
-      <p>You can also make a dedicated pause button with a 3D print. The print files are coming soon.</p>
+  <section class="dally-split dally-materials-section" id="materials" aria-label="Materials">
+    <span class="dally-star" aria-hidden="true" style="--star-x: 96%; --star-y: -10px; --star-size: 64px; --star-angle: 17deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 5%; --star-y: 102%; --star-size: 52px; --star-angle: -16deg"></span>
+    <div class="dally-materials">
+      <p>
+        You’ll need
+        <button type="button" aria-controls="dally-material-nfc" aria-pressed="false">NFC stickers
+          <img class="dally-nfc-tags" src="assets/dally/image-removebg-preview.png" width="500" height="500" alt="">
+        </button>,
+        the free
+        <button type="button" aria-controls="dally-material-foqos" aria-pressed="false">Foqos app
+          <img src="assets/dally/foqos-logo-removebg-preview.png" width="500" height="500" alt="">
+        </button>,
+        and something to stick a tag on.
+      </p>
+      <p class="dally-materials-note">
+        About $8 for 50 stickers. <button type="button" aria-controls="dally-material-magnets" aria-pressed="false">Magnets</button> optional.
+      </p>
+    </div>
+    <div class="dally-material-previews">
+      <article id="dally-material-nfc" hidden>
+        <img src="assets/dally/image-removebg-preview.png" width="500" height="500" alt="NFC tags">
+        <p class="dally-material-description">You can get 50 of these NFC stickers for just $8, so make some for your friends! NFC tags are the same technology used in hotel keycards. If you don't want to buy an NFC, you can use the barcode off of any box instead.</p>
+        <a class="pill-button dally-rounded-button" href="https://www.amazon.com/dp/B0F24L4GDM?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1">Buy on Amazon</a>
+      </article>
+      <article id="dally-material-magnets" hidden>
+        <img src="assets/dally/magnets%20big%20preview.png" width="532" height="469" alt="Magnets for Dally">
+        <p class="dally-material-description">These magnets are optional, but they’re great if you want to stick your blocker to a fridge or a metal filing cabinet.</p>
+        <a class="pill-button dally-rounded-button" href="https://www.amazon.com/s?k=small+craft+magnets">Buy on Amazon</a>
+      </article>
+      <article id="dally-material-foqos" hidden>
+        <img src="assets/dally/foqos-logo-removebg-preview.png" width="500" height="500" alt="Foqos purple hourglass logo">
+        <p class="dally-material-description">This is the app we’ll use to actually implement the blocking. The creator has said he’ll keep the app totally free, and all of the code is open source!</p>
+        <a class="pill-button dally-rounded-button" href="https://apps.apple.com/us/app/foqos-tap-to-block/id6736793117">Get Foqos on the App Store</a>
+      </article>
     </div>
   </section>
 
-  <section class="dally-setup" aria-label="Foqos setup preview">
-    <div class="dally-placeholder dally-setup-intro">Foqos setup coming soon</div>
-    <div class="dally-phone" aria-hidden="true"></div>
-    <div class="dally-phone" aria-hidden="true"></div>
-    <div class="dally-phone" aria-hidden="true"></div>
-    <div class="dally-phone" aria-hidden="true"></div>
-    <div class="dally-phone" aria-hidden="true"></div>
+  <section class="dally-setup" aria-labelledby="dally-setup-title">
+    <span class="dally-star" aria-hidden="true" style="--star-x: 8%; --star-y: -16px; --star-size: 66px; --star-angle: -14deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 93%; --star-y: 17px; --star-size: 51px; --star-angle: 26deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 83%; --star-y: 100%; --star-size: 72px; --star-angle: 21deg"></span>
+    <h2 id="dally-setup-title">Here’s how to set it up</h2>
+    <ol class="dally-setup-steps" role="list">
+      <li class="dally-demo-cell" aria-label="Attaching the sticker to your object">
+        <div class="dally-demo-square"></div>
+      </li>
+      <li>
+        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/4.GIF" aria-pressed="false">
+          <span class="dally-phone">
+            <img src="assets/dally/step-4-still.png" width="882" height="1920" loading="lazy" alt="Set up an NFC tag as a physical unlock in Foqos">
+          </span>
+        </button>
+        <p class="dally-step-caption">
+          <strong class="dally-step-title"><span class="dally-step-number">1</span> Pick your object</strong>
+          Stick an NFC tag onto whatever you want to use as your blocker. Download the free <a href="https://apps.apple.com/us/app/foqos-tap-to-block/id6736793117">Foqos app</a> and create a profile. Choose the apps you want to block, then scan your NFC tag to link it to the profile.
+        </p>
+      </li>
+      <li>
+        <div class="dally-step-visual">
+          <div class="dally-phone">
+            <img src="assets/dally/1.PNG" width="1206" height="2622" loading="lazy" alt="The Dally shortcut in the iPhone Shortcuts app">
+          </div>
+        </div>
+        <p class="dally-step-caption">
+          <strong class="dally-step-title"><span class="dally-step-number">2</span> Create an automation</strong>
+          Open the Shortcuts app, tap Automation, then tap + to start a new one.
+        </p>
+      </li>
+      <li>
+        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/steps-2-3.gif" aria-pressed="false">
+          <span class="dally-phone">
+            <img src="assets/dally/step-2-still.png" width="882" height="1920" loading="lazy" alt="Find the NFC automation and configure the NFC tag scan in Shortcuts">
+          </span>
+        </button>
+        <p class="dally-step-caption">
+          <strong class="dally-step-title"><span class="dally-step-number">3</span> Connect your tag</strong>
+          Choose NFC, tap Scan, and hold your phone near the tag to register it. Give it a name, then tap Next.
+        </p>
+      </li>
+      <li>
+        <button type="button" class="dally-step-visual dally-step-toggle" data-animation="assets/dally/5.GIF" aria-pressed="false">
+          <span class="dally-phone">
+            <img src="assets/dally/step-5-still.png" width="882" height="1920" loading="lazy" alt="Search for an action in Shortcuts">
+          </span>
+        </button>
+        <p class="dally-step-caption">
+          <strong class="dally-step-title"><span class="dally-step-number">4</span> Add the Foqos action</strong>
+          Select Foqos as the action, choose the profile you just made, and turn off “Ask Before Running” so it triggers instantly. Tap Done.
+        </p>
+      </li>
+      <li class="dally-demo-cell" aria-label="Final demo">
+        <div class="dally-demo-square"></div>
+      </li>
+    </ol>
   </section>
+
+  <section class="dally-prints" id="prints" aria-labelledby="prints-title">
+    <span class="dally-star" aria-hidden="true" style="--star-x: 92%; --star-y: -16px; --star-size: 65px; --star-angle: -23deg"></span>
+    <span class="dally-star" aria-hidden="true" style="--star-x: 42%; --star-y: 103%; --star-size: 47px; --star-angle: 19deg"></span>
+    <h2 id="prints-title">Have access to a 3D printer? Use my STL files!</h2>
+    <div class="dally-split">
+      <img class="dally-cad-video" src="assets/dally/3d%20print%20demo.GIF" width="640" height="424" alt="3D printing demo for the Dally pause button">
+      <div class="dally-prints-details">
+        <p>I designed this pause button in Tinkercad to fit a 25 × 25 mm NFC sticker and 5 × 2.8 mm magnets. In your slicer, add a pause around layer 43, just before the print starts covering the slot. Drop the NFC sticker into the slot, then resume printing to seal it inside. Once the print is done, glue the magnets into the holes on the underside.</p>
+        <p>If your NFC sticker is a different size, feel free to resize the slot in Tinkercad!</p>
+        <a class="pill-button dally-rounded-button" href="https://www.tinkercad.com/things/iE3ICK4YP7B-dally">Get STL files</a>
+      </div>
+    </div>
+  </section>
+
+  <a class="pill-button dally-projects-link" href="projects.html">
+    see my other projects
+    <svg class="arrow-ne" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5H19V11"/><path d="M19 5L5 19"/></svg>
+  </a>
 </main>
 
 <footer class="site-footer" id="footer">
@@ -83,6 +184,6 @@
 </footer>
 
 <script src="js/script.js"></script>
-<script src="js/dally.js?v=2"></script>
+<script src="js/dally.js?v=8"></script>
 </body>
 </html>
