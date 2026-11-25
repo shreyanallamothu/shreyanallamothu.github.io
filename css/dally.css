@@ -412,11 +412,13 @@
 
 .dally-phone img {
   position: absolute;
-  inset: 2.8% 8%;
-  width: 84%;
-  height: 94.4%;
+  /* The frame opening sits slightly right of center. Extend beneath its bezel. */
+  top: 2.13%;
+  left: 7.06%;
+  width: 88.14%;
+  height: 94.47%;
   border-radius: 12% / 5.5%;
-  object-fit: cover;
+  object-fit: fill;
 }
 
 .dally-phone::after {
